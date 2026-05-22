@@ -1,0 +1,102 @@
+"use client";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+
+
+const navLinks = [
+  { label: "Products", href: "#products" },
+  { label: "Our Story", href: "#story" },
+  { label: "Contact", href: "#contact" },
+];
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setHydrated(true);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const headerClass = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    hydrated && scrolled
+      ? "bg-[#000d1aee] backdrop-blur-md border-b border-[#1e3a5a]"
+      : "bg-transparent"
+  }`;
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    const id = href.replace("#", "");
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <header className={headerClass}>
+      <nav
+        className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+        aria-label="Main navigation"
+      >
+        <Link href="/" className="flex items-center gap-3" aria-label="D-Waash Home">
+          <div className="relative h-10 w-36">
+    <Image
+      src="/logo/dwaash-logo.png"
+      alt="D-Waash Logo"
+      fill
+      priority
+      className="object-contain"
+    />
+  </div>
+        </Link>
+
+        <ul className="hidden md:flex items-center gap-8" role="list">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="text-sm font-body text-slate-400 hover:text-[#00c6c6] transition-colors duration-200 cursor-pointer"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <button
+          className="md:hidden text-slate-300 hover:text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {menuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+      </nav>
+
+      {menuOpen && (
+        <div className="md:hidden bg-[#0a1628] border-t border-[#1e3a5a] px-6 py-4 flex flex-col gap-4">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="text-slate-300 hover:text-[#00c6c6] font-body text-sm transition-colors cursor-pointer"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+  );
+}

@@ -1,26 +1,161 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy-950: #000d1a;
+  --color-navy-900: #0a1628;
+  --color-navy-800: #0f2040;
+  --color-navy-700: #1e3a5a;
+  --color-navy-600: #2a4f78;
+  --color-cyan-brand: #00c6c6;
+  --color-cyan-light: #00e5ff;
+  --color-cyan-dim: rgba(0, 198, 198, 0.12);
+  --color-red-brand: #e83030;
+  --color-amber-accent: #f59e0b;
+  --font-family-display: var(--font-montserrat), sans-serif;
+  --font-family-body: var(--font-inter), sans-serif;
+  --animate-fade-up: fadeUp 0.7s ease forwards;
+  --animate-fade-in: fadeIn 0.6s ease forwards;
+  --animate-shimmer: shimmer 2.5s infinite;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes heroFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(0.8deg); }
+  50% { transform: translateY(4px) rotate(-0.4deg); }
+  75% { transform: translateY(-6px) rotate(0.3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy-950: #000d1a;
+  --navy-900: #0a1628;
+  --navy-800: #0f2040;
+  --navy-700: #1e3a5a;
+  --cyan-brand: #00c6c6;
+  --cyan-light: #00e5ff;
+  --red-brand: #e83030;
+  --amber-accent: #f59e0b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--navy-950);
+  color: #e2e8f0;
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--cyan-brand) 0%, var(--cyan-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, var(--cyan-brand) 0%, var(--amber-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0,198,198,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,198,198,0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.card-glow {
+  box-shadow: 0 0 0 1px rgba(0,198,198,0.1), 0 4px 32px rgba(0,0,0,0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card-glow:hover {
+  box-shadow: 0 0 0 1px rgba(0,198,198,0.35), 0 8px 48px rgba(0,198,198,0.08);
+  transform: translateY(-4px);
+}
+
+.btn-cyan {
+  background: var(--cyan-brand);
+  color: #000d1a;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-cyan:hover {
+  background: var(--cyan-light);
+  transform: scale(1.03);
+}
+
+.btn-outline {
+  border: 1px solid rgba(0,198,198,0.4);
+  color: var(--cyan-brand);
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 600;
+  transition: border-color 0.2s, background 0.2s;
+}
+.btn-outline:hover {
+  border-color: var(--cyan-brand);
+  background: rgba(0,198,198,0.08);
+}
+
+.divider-cyan {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,198,198,0.3), transparent);
+}
+
+.img-placeholder {
+  background: linear-gradient(135deg, #0f2040 0%, #1e3a5a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0,198,198,0.4);
+  font-size: 13px;
+  font-family: var(--font-inter), sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.glow-spot {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.06;
+}
+
+.section-gradient {
+  background: linear-gradient(180deg, #000d1a 0%, #0a1628 50%, #000d1a 100%);
 }
