@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# D-Waash Website
 
-## Getting Started
+**Stack:** Next.js 14 (App Router) · TypeScript · Tailwind CSS · Static Generation
 
-First, run the development server:
+---
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Adding Your Images
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All images live in `/public/images/`. The `<Image>` component (next/image) handles:
+- Auto WebP/AVIF conversion
+- Lazy loading
+- Correct srcset for all screen sizes
 
-## Learn More
+### Logo
+Place your logo file at:
+```
+/public/images/logo.png
+```
+Then in `components/Navbar.tsx`, replace the `<span>` fallback with:
+```tsx
+<Image src="/images/logo.png" alt="D-Waash logo" width={140} height={48} priority className="h-10 w-auto object-contain" />
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Product Images
+1. Copy product photos to `/public/images/` (recommended: square, min 800×800 px, JPEG/PNG/WebP)
+2. Open `lib/products.ts`
+3. Update the `image` field for each product:
+```ts
+image: "/images/your-product-filename.jpg",
+```
+The `imageAlt` field is already filled with SEO-optimised alt text — **keep it or improve it**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### OG Image (for Google/social previews)
+Place a 1200×630 px image at:
+```
+/public/images/og-default.jpg
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## SEO Checklist
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Item | Where to update |
+|------|----------------|
+| Site URL | `lib/metadata.ts` → `BASE_URL` |
+| Phone / email | `lib/metadata.ts` → `siteConfig` |
+| Address | `lib/metadata.ts` → `siteConfig.address` |
+| GPS coordinates | `lib/metadata.ts` → `siteConfig.geo` |
+| Social links | `lib/metadata.ts` → `siteConfig.social` |
+| Google Search Console token | `app/layout.tsx` → `verification.google` |
+| Product names/descriptions | `lib/products.ts` |
+| Map embed | `app/contact/page.tsx` → iframe `src` |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## File Structure
+
+```
+dwaash/
+├── app/
+│   ├── layout.tsx          ← Fonts, global SEO, JSON-LD org schema
+│   ├── page.tsx            ← Homepage
+│   ├── globals.css         ← Tailwind + custom CSS
+│   ├── sitemap.ts          ← Auto sitemap.xml
+│   ├── robots.ts           ← robots.txt
+│   ├── not-found.tsx       ← 404 page
+│   ├── about/page.tsx      ← Our Story
+│   ├── contact/page.tsx    ← Contact + Map
+│   └── products/
+│       ├── page.tsx        ← Products listing
+│       └── [slug]/page.tsx ← Individual product (SSG)
+├── components/
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   └── ProductCard.tsx
+├── lib/
+│   ├── products.ts         ← All product data (update images here)
+│   └── metadata.ts         ← SEO config (update domain, contact here)
+└── public/
+    └── images/             ← PUT YOUR IMAGES HERE
+```
+
+---
+
+## Deployment (Vercel — recommended)
+
+1. Push to GitHub
+2. Import to [vercel.com](https://vercel.com)
+3. Deploy — zero config needed for Next.js
+
+After deploying:
+- Submit `https://yourdomain.com/sitemap.xml` to Google Search Console
+- Set up Google Business Profile for local search visibility
+```
