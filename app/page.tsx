@@ -96,9 +96,9 @@ export default function HomePage() {
       </section>
 
       {/* ─── PRODUCTS ─── */}
-      <section id="products" className="section-gradient py-24" aria-labelledby="products-heading">
+      <section id="products" className="section-gradient py-16" aria-labelledby="products-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14 reveal">
+          <div className="text-center mb-10">
             <p className="text-[#00c6c6] text-xs font-display font-semibold uppercase tracking-[0.2em] mb-3">
               Our Range
             </p>
@@ -111,10 +111,10 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-4 lg:gap-5">
             {products.map((product, idx) => (
-              <div key={product.id} className={`reveal reveal-delay-${(idx % 3) + 1}`}>
-                <ProductCard product={product} priority={idx < 3} />
+              <div key={product.id}>
+                <ProductCard product={product} priority={idx < 6} />
               </div>
             ))}
           </div>
