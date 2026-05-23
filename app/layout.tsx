@@ -4,6 +4,7 @@ import "./globals.css";
 import { siteConfig } from "./lib/metadata";
 import Navbar from "./lib/components/navbar";
 import Footer from "./lib/components/footer";
+import ScrollReveal from "./lib/components/scroll-reveal";
 
 /* ─── Google Fonts via next/font (zero layout shift, self-hosted automatically) ─── */
 const montserrat = Montserrat({
@@ -123,27 +124,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
       </head>
-      <body className="bg-[#000d1a] text-slate-200 font-body">
+      <body className="bg-surface-body text-gray-300 font-body">
         <Navbar />
         <main>{children}</main>
         <Footer />
-        {/* Scroll reveal script — lightweight, no library needed */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                var els = document.querySelectorAll('.reveal');
-                if(!els.length) return;
-                var io = new IntersectionObserver(function(entries){
-                  entries.forEach(function(e){
-                    if(e.isIntersecting){ e.target.classList.add('revealed'); io.unobserve(e.target); }
-                  });
-                }, { threshold: 0.12 });
-                els.forEach(function(el){ io.observe(el); });
-              })();
-            `,
-          }}
-        />
+        <ScrollReveal />
       </body>
     </html>
   );

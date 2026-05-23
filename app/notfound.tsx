@@ -8,7 +8,7 @@ export default function NotFound() {
       <p className="text-slate-400 mb-8 max-w-sm">
         Looks like this page doesn't exist. Let's get you back to clean territory.
       </p>
-      <Link href="/" className="btn-cyan px-8 py-3 rounded-xl text-sm">
+      <Link href="/" className="btn-primary px-8 py-3 rounded-xl text-sm">
         Back to Home
       </Link>
     </section>

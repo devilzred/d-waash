@@ -9,20 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: {
-          950: "#000d1a",
-          900: "#0a1628",
-          800: "#0f2040",
-          700: "#1e3a5a",
-          600: "#2a4f78",
+        surface: {
+          body: "#121212",
+          section: "#1a1a1a",
+          card: "#222222",
+          elevated: "#2a2a2a",
         },
-        cyan: {
-          brand: "#00c6c6",
-          light: "#00e5ff",
-          dim: "rgba(0,198,198,0.12)",
+        border: {
+          DEFAULT: "#333333",
+          light: "#3d3d3d",
         },
         red: {
           brand: "#e83030",
+          dim: "rgba(232, 48, 48, 0.12)",
+        },
+        blue: {
+          brand: "#2563eb",
+          light: "#60a5fa",
+          dim: "rgba(37, 99, 235, 0.12)",
         },
       },
       fontFamily: {

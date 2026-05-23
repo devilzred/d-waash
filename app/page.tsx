@@ -49,20 +49,20 @@ export default function HomePage() {
       >
         <HeroBackground />
 
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#00c6c6] opacity-[0.04] rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#e83030] opacity-[0.03] rounded-full blur-[80px] pointer-events-none" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-brand opacity-[0.04] rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-red-brand opacity-[0.03] rounded-full blur-[80px] pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center">
         <div className="mb-8 reveal">
           <div className="mx-auto h-16 flex items-center justify-center">
             <span className="font-display font-extrabold text-5xl tracking-tight">
-              <span className="text-[#e83030]">D-</span>
+              <span className="text-red-brand">D-</span>
               <span className="text-white">Waash</span>
             </span>
           </div>
         </div>
 
-        <p className="text-[#00c6c6] font-display font-semibold text-sm uppercase tracking-[0.25em] mb-4 reveal reveal-delay-1">
+        <p className="text-blue-brand font-display font-semibold text-sm uppercase tracking-[0.25em] mb-4 reveal reveal-delay-1">
           Your Daily Hygiene
         </p>
 
@@ -79,12 +79,12 @@ export default function HomePage() {
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
           <span className="text-xs text-slate-500 font-body">scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-[#00c6c6] to-transparent animate-pulse" />
+          <div className="w-px h-8 bg-gradient-to-b from-blue-brand to-transparent animate-pulse" />
         </div>
       </section>
 
       {/* ─── STATS ─── */}
-      <section className="bg-[#0a1628] border-y border-[#1e3a5a] py-12" aria-label="Brand highlights">
+      <section className="bg-surface-section border-y border-border py-12" aria-label="Brand highlights">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
             <div key={s.label} className={`reveal reveal-delay-${i + 1}`}>
@@ -99,7 +99,7 @@ export default function HomePage() {
       <section id="products" className="section-gradient py-16" aria-labelledby="products-heading">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-10">
-            <p className="text-[#00c6c6] text-xs font-display font-semibold uppercase tracking-[0.2em] mb-3">
+            <p className="text-blue-brand text-xs font-display font-semibold uppercase tracking-[0.2em] mb-3">
               Our Range
             </p>
             <h2 id="products-heading" className="font-display font-extrabold text-3xl md:text-5xl text-white mb-4">
@@ -122,10 +122,10 @@ export default function HomePage() {
       </section>
 
       {/* ─── STORY ─── */}
-      <section id="story" className="bg-[#0a1628] border-y border-[#1e3a5a] py-24 overflow-hidden" aria-labelledby="story-heading">
+      <section id="story" className="bg-surface-section border-y border-border py-24 overflow-hidden" aria-labelledby="story-heading">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 reveal">
-            <p className="text-[#00c6c6] text-xs font-display font-semibold uppercase tracking-[0.25em] mb-3">
+            <p className="text-blue-brand text-xs font-display font-semibold uppercase tracking-[0.25em] mb-3">
               Our Story
             </p>
             <h2 id="story-heading" className="font-display font-extrabold text-3xl md:text-5xl text-white mb-4 leading-tight">
@@ -139,9 +139,6 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
             <div className="reveal">
-              <h3 className="font-display font-extrabold text-2xl text-white mb-6">
-                Meet the Founder
-              </h3>
               <p className="text-slate-400 leading-relaxed mb-4">
                 <strong className="text-white">Mr. Thafseel</strong> is a hypermarket owner who also runs
                 several subsidiary businesses across the region. In April 2021, he saw an opportunity to
@@ -165,21 +162,21 @@ export default function HomePage() {
                   <span className="text-xs opacity-60">Mr. Thafseel — founder, D-Waash</span>
                 </div>
               </div>
-              <div className="absolute -bottom-4 -left-4 w-20 h-20 border-2 border-[#00c6c6] rounded-2xl opacity-20" />
+              <div className="absolute -bottom-4 -left-4 w-20 h-20 border-2 border-blue-brand rounded-2xl opacity-20" />
             </div>
           </div>
 
-          <div className="divider-cyan max-w-3xl mx-auto mb-16" />
+          <div className="divider max-w-3xl mx-auto mb-16" />
 
           <div className="max-w-4xl mx-auto">
             <h3 className="font-display font-extrabold text-2xl text-white text-center mb-16 reveal">
               The D-Waash <span className="gradient-text">Journey</span>
             </h3>
-            <ol className="relative border-l border-[#1e3a5a] space-y-12 ml-4" role="list">
+            <ol className="relative border-l border-border space-y-12 ml-4" role="list">
               {timeline.map((item, i) => (
                 <li key={item.title} className={`relative pl-8 reveal reveal-delay-${(i % 3) + 1}`}>
-                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full border-2 border-[#00c6c6] bg-[#000d1a]" aria-hidden="true" />
-                  <time className="text-xs font-display font-semibold text-[#00c6c6] uppercase tracking-widest">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full border-2 border-blue-brand bg-surface-body" aria-hidden="true" />
+                  <time className="text-xs font-display font-semibold text-blue-brand uppercase tracking-widest">
                     {item.month && `${item.month} `}{item.year}
                   </time>
                   <h4 className="font-display font-bold text-white text-lg mt-1 mb-2">{item.title}</h4>
@@ -210,7 +207,7 @@ export default function HomePage() {
             ].map((item, i) => (
               <div
                 key={item.title}
-                className={`reveal reveal-delay-${(i % 3) + 1} bg-[#0a1628] border border-[#1e3a5a] rounded-2xl p-6 hover:border-[#00c6c6]/30 transition-colors duration-300`}
+                className={`reveal reveal-delay-${(i % 3) + 1} bg-surface-section border border-border rounded-2xl p-6 hover:border-blue-brand/30 transition-colors duration-300`}
               >
                 <span className="text-3xl mb-4 block" role="img" aria-hidden="true">{item.icon}</span>
                 <h3 className="font-display font-bold text-white text-base mb-2">{item.title}</h3>
@@ -222,10 +219,10 @@ export default function HomePage() {
       </section>
 
       {/* ─── CONTACT ─── */}
-      <section id="contact" className="bg-[#0a1628] border-y border-[#1e3a5a] py-24" aria-labelledby="contact-heading">
+      <section id="contact" className="bg-surface-section border-y border-border py-24" aria-labelledby="contact-heading">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14 reveal">
-            <p className="text-[#00c6c6] text-xs font-display font-semibold uppercase tracking-[0.25em] mb-3">
+            <p className="text-blue-brand text-xs font-display font-semibold uppercase tracking-[0.25em] mb-3">
               Get in Touch
             </p>
             <h2 id="contact-heading" className="font-display font-extrabold text-3xl md:text-4xl text-white mb-4">
@@ -254,9 +251,9 @@ export default function HomePage() {
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="flex items-center gap-4 bg-[#000d1a] border border-[#1e3a5a] rounded-2xl p-5 hover:border-[#00c6c6]/40 hover:shadow-lg hover:shadow-[#00c6c6]/5 transition-all duration-200 group"
+                  className="flex items-center gap-4 bg-surface-body border border-border rounded-2xl p-5 hover:border-blue-brand/40 hover:shadow-lg hover:shadow-blue-brand/5 transition-all duration-200 group"
                 >
-                  <span className="w-10 h-10 rounded-lg bg-[#0f2040] flex items-center justify-center text-[#00c6c6] shrink-0 group-hover:bg-[#00c6c6] group-hover:text-[#000d1a] transition-all duration-200">
+                  <span className="w-10 h-10 rounded-lg bg-surface-elevated flex items-center justify-center text-blue-brand shrink-0 group-hover:bg-blue-brand group-hover:text-white transition-all duration-200">
                     {item.icon === "phone" ? (
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -273,14 +270,14 @@ export default function HomePage() {
                   </span>
                   <div>
                     <p className="text-xs text-slate-500 font-display uppercase tracking-widest mb-1">{item.label}</p>
-                    <p className="text-white font-body text-sm group-hover:text-[#00c6c6] transition-colors">{item.value}</p>
+                    <p className="text-white font-body text-sm group-hover:text-blue-brand transition-colors">{item.value}</p>
                   </div>
                 </a>
               ))}
 
-              <div className="bg-[#000d1a] border border-[#1e3a5a] rounded-2xl p-6 hover:border-[#00c6c6]/40 transition-all duration-200">
+              <div className="bg-surface-body border border-border rounded-2xl p-6 hover:border-blue-brand/40 transition-all duration-200">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="w-8 h-8 rounded-lg bg-[#0f2040] flex items-center justify-center text-[#00c6c6] shrink-0">
+                  <span className="w-8 h-8 rounded-lg bg-surface-elevated flex items-center justify-center text-blue-brand shrink-0">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -288,36 +285,42 @@ export default function HomePage() {
                   <h3 className="font-display font-bold text-white text-sm uppercase tracking-widest">Business Hours</h3>
                 </div>
                 <dl className="space-y-2 text-sm">
-                  <div className="flex justify-between py-2 border-b border-[#1e3a5a]/50">
+                  <div className="flex justify-between py-2 border-b border-border/50">
                     <dt className="text-slate-500">Monday – Saturday</dt>
                     <dd className="text-slate-300 font-medium">9:00 AM – 6:00 PM</dd>
                   </div>
                   <div className="flex justify-between py-2">
                     <dt className="text-slate-500">Sunday</dt>
-                    <dd className="text-[#e83030] font-medium">Closed</dd>
+                    <dd className="text-red-brand font-medium">Closed</dd>
                   </div>
                 </dl>
               </div>
             </div>
 
             <div className="reveal reveal-delay-2 space-y-6">
-              <div className="rounded-2xl overflow-hidden card-glow h-72 md:h-full min-h-[300px]">
-                <iframe
-                  src={`https://maps.google.com/maps?q=${siteConfig.geo.lat},${siteConfig.geo.lng}&z=15&output=embed`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="D-Waash location on Google Maps"
-                  aria-label="Google Map showing D-Waash location"
-                />
-              </div>
+              <a
+                href="https://maps.app.goo.gl/U4F6WPGVdjVNZ4ht9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl card-glow h-72 md:h-full min-h-[300px] flex flex-col items-center justify-center gap-4 p-8 group"
+              >
+                <span className="w-16 h-16 rounded-2xl bg-blue-brand/10 flex items-center justify-center text-blue-brand group-hover:bg-blue-brand group-hover:text-white transition-all duration-200">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </span>
+                <p className="font-display font-bold text-lg text-white group-hover:text-blue-brand transition-colors">
+                  Find Us on Google Maps
+                </p>
+                <span className="text-sm text-slate-400 group-hover:text-slate-300 transition-colors">
+                  Open in Maps ↗
+                </span>
+              </a>
 
-              <div className="bg-[#000d1a] border border-[#1e3a5a] rounded-2xl p-5 hover:border-[#00c6c6]/40 transition-all duration-200">
+              <div className="bg-surface-body border border-border rounded-2xl p-5 hover:border-blue-brand/40 transition-all duration-200">
                 <div className="flex items-center gap-2 mb-2">
-                  <svg className="w-4 h-4 text-[#00c6c6]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-4 h-4 text-blue-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
@@ -328,10 +331,10 @@ export default function HomePage() {
                   {siteConfig.address.city}, {siteConfig.address.state} – {siteConfig.address.postalCode}
                 </address>
                 <a
-                  href={`https://maps.google.com/?q=${siteConfig.geo.lat},${siteConfig.geo.lng}`}
+                  href="https://maps.app.goo.gl/U4F6WPGVdjVNZ4ht9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#00c6c6] hover:text-[#00e5ff] transition-colors"
+                  className="mt-3 inline-flex items-center gap-1 text-xs text-blue-brand hover:text-blue-light transition-colors"
                 >
                   Open in Maps ↗
                 </a>

@@ -24,7 +24,7 @@ export default function Navbar() {
 
   const headerClass = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
     hydrated && scrolled
-      ? "bg-[#000d1aee] backdrop-blur-md border-b border-[#1e3a5a]"
+      ? "bg-surface-body/90 backdrop-blur-md border-b border-border"
       : "bg-transparent"
   }`;
 
@@ -47,6 +47,7 @@ export default function Navbar() {
       src="/logo/dwaash-logo.png"
       alt="D-Waash Logo"
       fill
+      sizes="144px"
       priority
       className="object-contain"
     />
@@ -59,7 +60,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm font-body text-slate-400 hover:text-[#00c6c6] transition-colors duration-200 cursor-pointer"
+                className="text-sm font-body text-gray-400 hover:text-blue-brand transition-colors duration-200 cursor-pointer"
               >
                 {link.label}
               </a>
@@ -84,13 +85,13 @@ export default function Navbar() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden bg-[#0a1628] border-t border-[#1e3a5a] px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-surface-section border-t border-border px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-slate-300 hover:text-[#00c6c6] font-body text-sm transition-colors cursor-pointer"
+              className="text-gray-300 hover:text-blue-brand font-body text-sm transition-colors cursor-pointer"
             >
               {link.label}
             </a>

@@ -9,11 +9,11 @@ interface ProductCardProps {
 export default function ProductCard({ product, priority = false }: ProductCardProps) {
   return (
     <article
-      className="card-glow bg-[#0a1628] rounded-xl sm:rounded-2xl overflow-hidden flex flex-col min-h-[230px] sm:min-h-[300px]"
+      className="card-glow bg-surface-section rounded-xl sm:rounded-2xl overflow-hidden flex flex-col min-h-[230px] sm:min-h-[300px] m-2"
       itemScope
       itemType="https://schema.org/Product"
     >
-      <div className="relative aspect-[4/5] overflow-hidden bg-[#0f2040]">
+      <div className="relative aspect-[4/5] overflow-hidden bg-surface-elevated">
         <ProductImage
           src={product.image}
           alt={product.imageAlt}
@@ -26,13 +26,13 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
       </div>
 
       <div className="p-2 sm:p-4 flex flex-col gap-0.5 sm:gap-1 flex-1 justify-center">
-        <span className="text-[10px] sm:text-xs font-display font-semibold text-[#00c6c6] uppercase tracking-wider" itemProp="category">
+        <span className="text-[10px] sm:text-xs font-display font-semibold text-blue-brand uppercase tracking-wider" itemProp="category">
           {product.category}
         </span>
         <h3 className="font-display font-bold text-[11px] sm:text-sm text-white leading-snug line-clamp-2" itemProp="name">
           {product.name}
         </h3>
-        <p className="text-[9px] sm:text-[11px] text-[#00c6c6] font-display font-semibold line-clamp-1">
+        <p className="text-[9px] sm:text-[11px] text-blue-brand font-display font-semibold line-clamp-1">
           {product.tagline}
         </p>
       </div>
