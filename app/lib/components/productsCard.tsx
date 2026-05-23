@@ -13,13 +13,13 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
       itemScope
       itemType="https://schema.org/Product"
     >
-      <div className="relative aspect-[4/5] overflow-hidden bg-surface-elevated">
+      <div className="relative aspect-[4/5] overflow-hidden bg-[#d3d3d3]">
         <ProductImage
           src={product.image}
           alt={product.imageAlt}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-          className="object-cover"
+          className="object-contain p-2 sm:p-4"
           priority={priority}
           itemProp="image"
         />
