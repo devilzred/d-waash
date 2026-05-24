@@ -53,28 +53,28 @@ export default function HomePage() {
         <div className="absolute bottom-0 right-0 w-72 h-72 bg-red-brand opacity-[0.03] rounded-full blur-[80px] pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center">
-        <div className="mb-8 reveal">
-          <div className="mx-auto h-16 flex items-center justify-center">
-            <span className="font-display font-extrabold text-5xl tracking-tight">
-              <span className="text-red-brand">D-</span>
-              <span className="text-white">Waash</span>
-            </span>
+          <div className="mb-8 reveal">
+            <div className="mx-auto h-16 flex items-center justify-center">
+              <span className="font-display font-extrabold text-5xl tracking-tight">
+                <span className="text-red-brand">D-</span>
+                <span className="text-white">Waash</span>
+              </span>
+            </div>
           </div>
-        </div>
 
-        <p className="text-blue-brand font-display font-semibold text-sm uppercase tracking-[0.25em] mb-4 reveal reveal-delay-1">
-          Your Daily Hygiene
-        </p>
+          <p className="text-blue-brand font-display font-semibold text-sm uppercase tracking-[0.25em] mb-4 reveal reveal-delay-1">
+            Your Daily Hygiene
+          </p>
 
-        <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-white max-w-4xl leading-tight mb-6 reveal reveal-delay-2">
-          Clean Home,{" "}
-          <span className="gradient-text">Happy Family</span>
-        </h1>
+          <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-white max-w-4xl leading-tight mb-6 reveal reveal-delay-2">
+            Clean Home,{" "}
+            <span className="gradient-text">Happy Family</span>
+          </h1>
 
-        <p className="text-slate-400 text-lg max-w-xl leading-relaxed mb-10 reveal reveal-delay-3">
-          Premium hygiene products crafted in Kerala — from detergent powders to fabric softeners,
-          trusted by families across the region since 2021.
-        </p>
+          <p className="text-slate-400 text-lg max-w-xl leading-relaxed mb-10 reveal reveal-delay-3">
+            Premium hygiene products crafted in Kerala — from detergent powders to fabric softeners,
+            trusted by families across the region since 2021.
+          </p>
         </div>{/* /relative z-10 */}
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
@@ -156,10 +156,15 @@ export default function HomePage() {
 
             <div className="reveal reveal-delay-2 relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden card-glow">
-                <div className="img-placeholder w-full h-full min-h-[260px] flex-col gap-2">
-                  <span className="text-4xl">👤</span>
-                  <span className="mt-2">Add founder photo</span>
-                  <span className="text-xs opacity-60">Mr. Thafseel — founder, D-Waash</span>
+                <div className="img-placeholder relative w-full h-full min-h-[260px] overflow-hidden rounded-xl">
+                  <img
+                    src="/images/banner.png"
+                    alt="Mr. Thafseel — Founder, D-Waash"
+                    className="w-full h-full object-fit"
+                  />
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/25"></div>
                 </div>
               </div>
               <div className="absolute -bottom-4 -left-4 w-20 h-20 border-2 border-blue-brand rounded-2xl opacity-20" />
