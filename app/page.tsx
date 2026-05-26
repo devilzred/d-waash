@@ -6,7 +6,7 @@ import HeroBackground from "./lib/components/heroBackground";
 
 const stats = [
   { value: "2021", label: "Founded" },
-  { value: "6+", label: "Products" },
+  { value: "100+", label: "Products" },
   { value: "Kerala", label: "Made in" },
   { value: "1000+", label: "Happy Families" },
 ];
@@ -164,7 +164,7 @@ export default function HomePage() {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/25"></div>
+                  <div className="absolute inset-0 bg-black/15"></div>
                 </div>
               </div>
               <div className="absolute -bottom-4 -left-4 w-20 h-20 border-2 border-blue-brand rounded-2xl opacity-20" />
@@ -302,47 +302,93 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="reveal reveal-delay-2 space-y-6">
+            <div className="reveal reveal-delay-2 flex flex-col gap-4">
+
+              {/* Maps Card */}
               <a
                 href="https://maps.app.goo.gl/U4F6WPGVdjVNZ4ht9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-2xl card-glow h-72 md:h-full min-h-[300px] flex flex-col items-center justify-center gap-4 p-8 group"
+                className="rounded-2xl card-glow h-80 sm-h-36 flex flex-col items-center justify-center gap-4 p-8 group"
               >
                 <span className="w-16 h-16 rounded-2xl bg-blue-brand/10 flex items-center justify-center text-blue-brand group-hover:bg-blue-brand group-hover:text-white transition-all duration-200">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <svg
+                    className="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
                 </span>
-                <p className="font-display font-bold text-lg text-white group-hover:text-blue-brand transition-colors">
+
+                <p className="font-display font-bold text-lg text-white group-hover:text-blue-brand transition-colors text-center">
                   Find Us on Google Maps
                 </p>
+
                 <span className="text-sm text-slate-400 group-hover:text-slate-300 transition-colors">
                   Open in Maps ↗
                 </span>
               </a>
 
-              <div className="bg-surface-body border border-border rounded-2xl p-5 hover:border-blue-brand/40 transition-all duration-200">
-                <div className="flex items-center gap-2 mb-2">
-                  <svg className="w-4 h-4 text-blue-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              {/* Address Card */}
+              <div className="bg-surface-body border border-border rounded-2xl p-5 hover:border-blue-brand/40 transition-all duration-200 -mt-1">
+
+                <div className="flex items-center gap-2 mb-3">
+                  <svg
+                    className="w-4 h-4 text-blue-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
-                  <p className="text-xs font-display uppercase tracking-widest text-slate-500">Address</p>
+
+                  <p className="text-xs font-display uppercase tracking-widest text-slate-500">
+                    Address
+                  </p>
                 </div>
-                <address className="not-italic text-slate-300 text-sm">
-                  {siteConfig.address.street}<br />
-                  {siteConfig.address.city}, {siteConfig.address.state} – {siteConfig.address.postalCode}
+
+                <address className="not-italic text-slate-300 text-sm leading-relaxed">
+                  {siteConfig.address.street}
+                  <br />
+                  {siteConfig.address.city}, {siteConfig.address.state} –{" "}
+                  {siteConfig.address.postalCode}
                 </address>
+
                 <a
                   href="https://maps.app.goo.gl/U4F6WPGVdjVNZ4ht9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1 text-xs text-blue-brand hover:text-blue-light transition-colors"
+                  className="mt-4 inline-flex items-center gap-1 text-xs text-blue-brand hover:text-blue-light transition-colors"
                 >
                   Open in Maps ↗
                 </a>
+
               </div>
             </div>
           </div>

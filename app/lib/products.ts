@@ -66,7 +66,7 @@ export const products: Product[] = [
     description:
       "D-Waash Laundry Liquid cuts through grease and grime with ease. Its concentrated formula works in cold water, pre-treats stains, and leaves clothes smelling beautifully fresh.",
     category: "Laundry",
-    image: "/images/laudenryliquid.png",
+    image: "/images/laudenryliquidfront.png",
     imageAlt: "D-Waash laundry liquid detergent bottle",
     features: ["Grease-cutting formula", "Works in cold water", "Pre-treats stains", "Fresh fragrance"],
     schemaName: "D-Waash Laundry Liquid",
@@ -90,7 +90,7 @@ export const products: Product[] = [
     description:
       "D-Waash Hand Wash gently cleanses while keeping your skin soft and moisturised. Its antibacterial formula gives you confidence with every wash.",
     category: "Personal Care",
-    image: "/images/handwash.png",
+    image: "/images/handwashfront.png",
     imageAlt: "D-Waash hand wash liquid soap for gentle cleaning",
     features: ["Gentle cleansing", "Antibacterial formula", "Moisturising", "Rinses clean"],
     schemaName: "D-Waash Hand Wash",
@@ -102,7 +102,7 @@ export const products: Product[] = [
     description:
       "D-Waash Toilet Cleaner fights tough stains, limescale, and germs with its powerful thick-gel formula. Leaves your toilet hygienically clean and fresh-smelling.",
     category: "Home Care",
-    image: "/images/tolietcleaner.png",
+    image: "/images/tolietcleanerfront.png",
     imageAlt: "D-Waash toilet cleaner for germ-free bathroom hygiene",
     features: ["Kills 99.9% germs", "Limescale removal", "Thick gel formula", "Long-lasting freshness"],
     schemaName: "D-Waash Toilet Cleaner",
