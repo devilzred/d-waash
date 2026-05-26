@@ -242,14 +242,15 @@ export default function HomePage() {
             <div className="reveal space-y-5">
               {[
                 {
-                  icon: "phone", label: "Phone", value: siteConfig.phone, href: `tel:${siteConfig.phone}`,
+                  icon: "phone", label: "Contact", value: siteConfig.phone, href: `tel:${siteConfig.phone}`,
+                },
+                {
+                  icon: "phone", label: "Sales & Marketing", value: siteConfig.salesPhone, href: `tel:${siteConfig.salesPhone}`,
                 },
                 {
                   icon: "email", label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}`,
                 },
-                {
-                  icon: "whatsapp", label: "WhatsApp", value: "Chat with us", href: `https://wa.me/${siteConfig.social.whatsapp}`,
-                },
+
               ].map((item) => (
                 <a
                   key={item.label}

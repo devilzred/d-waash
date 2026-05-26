@@ -85,7 +85,10 @@ export default function Footer() {
             <p>{siteConfig.address.street}</p>
             <p>{siteConfig.address.city}, {siteConfig.address.state}</p>
             <a href={`tel:${siteConfig.phone}`} className="block hover:text-blue-brand transition-colors">
-              {siteConfig.phone}
+              {siteConfig.phone} (Contact)
+            </a>
+            <a href={`tel:${siteConfig.salesPhone}`} className="block hover:text-blue-brand transition-colors">
+              {siteConfig.salesPhone} (Sales & Marketing)
             </a>
             <a href={`mailto:${siteConfig.email}`} className="block hover:text-blue-brand transition-colors">
               {siteConfig.email}

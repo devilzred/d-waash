@@ -9,19 +9,21 @@ export const siteConfig = {
     "D-Waash is a Kerala-based hygiene products brand offering bar soap, detergent powder, fabric softener, bathroom cleaner, toilet cleaner and anti-ant powder. Quality you can trust, every day.",
   url: BASE_URL,
   logo: `${BASE_URL}/images/logo.png`, // ← Place your logo at /public/images/logo.png
-  phone: "+91 8606548393",             // ← Replace with real phone
-  email: "dwaashstore@gmail.com",            // ← Replace with real email
+  phone: "+91 9961108415",             // ← Contact number
+  salesPhone: "+91 8606548393",       // ← Sales & Marketing
+  email: "dwaashstore@gmail.com",            
   address: {
-    street: "D712 Line , Bommasandra",     // ← Replace
+    street: "D712 Line , Bommasandra",     
     city: "Bengaluru",
     state: "Karnataka",
-    postalCode: "560099",              // ← Replace
+    postalCode: "560099",              
     country: "IN",
   },
   social: {
-    instagram: "https://instagram.com/dwaash",   // ← Replace
-    facebook: "https://facebook.com/dwaash",     // ← Replace
-    whatsapp: "+91 8606548393",                   // ← Replace
+    instagram: "https://instagram.com/dwaash",   // ← tempsite
+    facebook: "https://facebook.com/dwaash",     // ← tempsite
+    whatsapp: "https://wa.me/+918606548393",                   // ← Sales & Marketing WhatsApp
+    contactWhatsapp: "https://wa.me/+919961108415",             // ← Contact WhatsApp
   },
   geo: {
     lat: 11.2807,   // ← Update with exact coordinates
