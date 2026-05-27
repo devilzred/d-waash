@@ -26,7 +26,7 @@ export default function Footer() {
     />
   </div>
           <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-            Your Daily Hygiene — quality cleaning and hygiene products trusted by
+            Your Daily Hygiene quality cleaning and hygiene products trusted by
             families across the region since 2021.
           </p>
           <div className="flex gap-4 mt-5">

@@ -29,12 +29,12 @@ const timeline = [
   {
     year: "2022–23", month: "",
     title: "The Region Takes Notice",
-    desc: "More customers across surrounding areas begin searching specifically for D-Waash products — a clear signal of brand recognition forming organically.",
+    desc: "More customers across surrounding areas begin searching specifically for D-Waash products, a clear signal of brand recognition forming organically.",
   },
   {
     year: "2024+", month: "",
     title: "Building a Full-Fledged Brand",
-    desc: "Mr. Thafseel makes the strategic decision to invest in D-Waash as a standalone brand — expanding the product range, distribution, and now, digital presence.",
+    desc: "Mr. Thafseel makes the strategic decision to invest in D-Waash as a standalone brand expanding the product range, distribution, and now, digital presence.",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-gray-500 text-lg max-w-xl leading-relaxed mb-10 reveal reveal-delay-3">
-            Premium hygiene products — from detergent powders to fabric softeners,
+            Premium hygiene products from detergent powders to fabric softeners,
             trusted by families across the region since 2021.
           </p>
         </div>{/* /relative z-10 */}
@@ -105,7 +105,7 @@ export default function HomePage() {
               Products You Can Trust
             </h2>
             <p className="text-gray-500 max-w-lg mx-auto text-base">
-              Every D-Waash product is formulated for effective daily hygiene — quality you can see,
+              Every D-Waash product is formulated for effective daily hygiene quality you can see,
               results you can feel.
             </p>
           </div>
@@ -205,7 +205,7 @@ export default function HomePage() {
 
               { icon: "💰", title: "Affordable for All", desc: "Premium hygiene shouldn't be a luxury. D-Waash keeps prices accessible." },
               { icon: "🧼", title: "Full Hygiene Range", desc: "From laundry to bathrooms — we cover every corner of your daily hygiene routine." },
-              { icon: "💬", title: "Word-of-Mouth Growth", desc: "Built entirely on customer love and positive recommendations — no shortcuts." },
+              { icon: "💬", title: "Word-of-Mouth Growth", desc: "Built entirely on customer love and positive recommendations no shortcuts." },
               { icon: "📍", title: "Available Nearby", desc: "D-Waash products are available at outlets across the region and growing." },
             ].map((item, i) => (
               <div

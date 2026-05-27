@@ -11,28 +11,28 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  {
-    id: "suncare-detergent-powder",
-    name: "SunCare Detergent Powder",
-    tagline: "Powerful clean, brighter every wash",
-    description:
-      "D-Waash SunCare Detergent Powder delivers deep-cleaning power that removes tough stains while keeping whites bright and colours vibrant. Perfect for machine and hand wash.",
-    category: "Laundry",
-    image: "/images/detergent.png",
-    imageAlt: "D-Waash SunCare Detergent Powder pack for laundry cleaning",
-    features: ["Tough stain removal", "Brightens whites", "Machine & hand wash", "Long-lasting fragrance"],
-    schemaName: "D-Waash SunCare Detergent Powder",
-  },
+  // {
+  //   id: "suncare-detergent-powder",
+  //   name: "SunCare Detergent Powder",
+  //   tagline: "Powerful clean, brighter every wash",
+  //   description:
+  //     "D-Waash SunCare Detergent Powder delivers deep-cleaning power that removes tough stains while keeping whites bright and colours vibrant. Perfect for machine and hand wash.",
+  //   category: "Laundry",
+  //   image: "/images/detergent.png",
+  //   imageAlt: "D-Waash SunCare Detergent Powder pack for laundry cleaning",
+  //   features: ["Tough stain removal", "Brightens whites", "Machine & hand wash", "Long-lasting fragrance"],
+  //   schemaName: "D-Waash SunCare Detergent Powder",
+  // },
   {
     id: "suncare-detergent-powder-2in1",
-    name: "SunCare Detergent Powder 2-in-1",
-    tagline: "Detergent & softener in one",
+    name: "SunCare Detergent Powder",
+    tagline: "Detergent",
     description:
       "D-Waash SunCare Detergent Powder 2-in-1 combines powerful cleaning with built-in fabric softening. One wash delivers clean, soft, and fresh-smelling laundry every time.",
     category: "Laundry",
     image: "/images/detergent2.png",
     imageAlt: "D-Waash SunCare Detergent Powder 2-in-1 with fabric softener",
-    features: ["2-in-1 formula", "Built-in fabric softener", "Anti-static", "Fresh linen scent"],
+    features: ["4kg + 2kg free", "Built-in fabric softener", "Anti-static", "Fresh linen scent"],
     schemaName: "D-Waash SunCare Detergent Powder 2-in-1",
   },
   {
@@ -71,18 +71,18 @@ export const products: Product[] = [
     features: ["Grease-cutting formula", "Works in cold water", "Pre-treats stains", "Fresh fragrance"],
     schemaName: "D-Waash Laundry Liquid",
   },
-  {
-    id: "bar-soap",
-    name: "D-Waash Bar Soap",
-    tagline: "Pure clean, daily trust",
-    description:
-      "D-Waash Bar Soap delivers gentle yet effective cleansing for the whole family. Antibacterial protection and a rich creamy lather make it a trusted choice for everyday hygiene.",
-    category: "Personal Care",
-    image: "/images/barsoap.png",
-    imageAlt: "D-Waash antibacterial bar soap for daily hygiene",
-    features: ["Gentle on skin", "Antibacterial", "Rich creamy lather", "Everyday freshness"],
-    schemaName: "D-Waash Bar Soap",
-  },
+  // {
+  //   id: "bar-soap",
+  //   name: "D-Waash Bar Soap",
+  //   tagline: "Pure clean, daily trust",
+  //   description:
+  //     "D-Waash Bar Soap delivers gentle yet effective cleansing for the whole family. Antibacterial protection and a rich creamy lather make it a trusted choice for everyday hygiene.",
+  //   category: "Personal Care",
+  //   image: "/images/barsoap.png",
+  //   imageAlt: "D-Waash antibacterial bar soap for daily hygiene",
+  //   features: ["Gentle on skin", "Antibacterial", "Rich creamy lather", "Everyday freshness"],
+  //   schemaName: "D-Waash Bar Soap",
+  // },
   {
     id: "hand-wash",
     name: "Hand Wash",
@@ -131,18 +131,18 @@ export const products: Product[] = [
     features: ["Fast-acting barrier", "Long-lasting protection", "Easy to apply", "Safe around home"],
     schemaName: "D-Waash Anti-Ant Powder",
   },
-  {
-    id: "dish-wash-liquid",
-    name: "Dish Wash Liquid",
-    tagline: "Grease gone in seconds",
-    description:
-      "D-Waash Dish Wash Liquid cuts through tough grease and baked-on food with ease. Its concentrated formula is gentle on hands while leaving dishes sparkling clean.",
-    category: "Home Care",
-    image: "/images/dishwash.png",
-    imageAlt: "D-Waash dish wash liquid for grease-free utensils",
-    features: ["Cuts tough grease", "Lemon-fresh scent", "Gentle on hands", "Concentrated formula"],
-    schemaName: "D-Waash Dish Wash Liquid",
-  },
+  // {
+  //   id: "dish-wash-liquid",
+  //   name: "Dish Wash Liquid",
+  //   tagline: "Grease gone in seconds",
+  //   description:
+  //     "D-Waash Dish Wash Liquid cuts through tough grease and baked-on food with ease. Its concentrated formula is gentle on hands while leaving dishes sparkling clean.",
+  //   category: "Home Care",
+  //   image: "/images/dishwash.png",
+  //   imageAlt: "D-Waash dish wash liquid for grease-free utensils",
+  //   features: ["Cuts tough grease", "Lemon-fresh scent", "Gentle on hands", "Concentrated formula"],
+  //   schemaName: "D-Waash Dish Wash Liquid",
+  // },
   {
     id: "floor-cleaner",
     name: "Floor Cleaner",
