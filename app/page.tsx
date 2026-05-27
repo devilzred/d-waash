@@ -7,7 +7,6 @@ import HeroBackground from "./lib/components/heroBackground";
 const stats = [
   { value: "2021", label: "Founded" },
   { value: "100+", label: "Products" },
-  { value: "Kerala", label: "Made in" },
   { value: "1000+", label: "Happy Families" },
 ];
 
@@ -57,7 +56,7 @@ export default function HomePage() {
             <div className="mx-auto h-16 flex items-center justify-center">
               <span className="font-display font-extrabold text-5xl tracking-tight">
                 <span className="text-red-brand">D-</span>
-                <span className="text-white">Waash</span>
+                <span className="text-gray-900">Waash</span>
               </span>
             </div>
           </div>
@@ -66,30 +65,30 @@ export default function HomePage() {
             Your Daily Hygiene
           </p>
 
-          <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-white max-w-4xl leading-tight mb-6 reveal reveal-delay-2">
+          <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-gray-900 max-w-4xl leading-tight mb-6 reveal reveal-delay-2">
             Clean Home,{" "}
             <span className="gradient-text">Happy Family</span>
           </h1>
 
-          <p className="text-slate-400 text-lg max-w-xl leading-relaxed mb-10 reveal reveal-delay-3">
-            Premium hygiene products crafted in Kerala — from detergent powders to fabric softeners,
+          <p className="text-gray-500 text-lg max-w-xl leading-relaxed mb-10 reveal reveal-delay-3">
+            Premium hygiene products — from detergent powders to fabric softeners,
             trusted by families across the region since 2021.
           </p>
         </div>{/* /relative z-10 */}
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-          <span className="text-xs text-slate-500 font-body">scroll</span>
+          <span className="text-xs text-gray-400 font-body">scroll</span>
           <div className="w-px h-8 bg-gradient-to-b from-blue-brand to-transparent animate-pulse" />
         </div>
       </section>
 
       {/* ─── STATS ─── */}
       <section className="bg-surface-section border-y border-border py-12" aria-label="Brand highlights">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-4xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
           {stats.map((s, i) => (
             <div key={s.label} className={`reveal reveal-delay-${i + 1}`}>
               <p className="font-display font-extrabold text-3xl gradient-text mb-1">{s.value}</p>
-              <p className="text-xs text-slate-500 uppercase tracking-widest font-display">{s.label}</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{s.label}</p>
             </div>
           ))}
         </div>
@@ -102,10 +101,10 @@ export default function HomePage() {
             <p className="text-blue-brand text-xs font-display font-semibold uppercase tracking-[0.2em] mb-3">
               Our Range
             </p>
-            <h2 id="products-heading" className="font-display font-extrabold text-3xl md:text-5xl text-white mb-4">
+            <h2 id="products-heading" className="font-display font-extrabold text-3xl md:text-5xl text-gray-900 mb-4">
               Products You Can Trust
             </h2>
-            <p className="text-slate-400 max-w-lg mx-auto text-base">
+            <p className="text-gray-500 max-w-lg mx-auto text-base">
               Every D-Waash product is formulated for effective daily hygiene — quality you can see,
               results you can feel.
             </p>
@@ -128,10 +127,10 @@ export default function HomePage() {
             <p className="text-blue-brand text-xs font-display font-semibold uppercase tracking-[0.25em] mb-3">
               Our Story
             </p>
-            <h2 id="story-heading" className="font-display font-extrabold text-3xl md:text-5xl text-white mb-4 leading-tight">
+            <h2 id="story-heading" className="font-display font-extrabold text-3xl md:text-5xl text-gray-900 mb-4 leading-tight">
               From One Store to a <span className="gradient-text">Trusted Brand</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto text-base">
+            <p className="text-gray-500 max-w-2xl mx-auto text-base">
               D-Waash didn't begin with a big marketing campaign or a factory full of machines.
               It began with a belief in quality — and customers who agreed.
             </p>
@@ -139,16 +138,16 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
             <div className="reveal">
-              <p className="text-slate-400 leading-relaxed mb-4">
-                <strong className="text-white">Mr. Thafseel</strong> is a hypermarket owner who also runs
+              <p className="text-gray-500 leading-relaxed mb-4">
+                <strong className="text-gray-900">Mr. Thafseel</strong> is a hypermarket owner who also runs
                 several subsidiary businesses across the region. In April 2021, he saw an opportunity to
                 bring quality hygiene products — at fair prices — directly to the community he served.
               </p>
-              <p className="text-slate-400 leading-relaxed mb-4">
+              <p className="text-gray-500 leading-relaxed mb-4">
                 Starting with his own hypermarket outlets, he launched D-Waash with a simple promise:
                 effective products that every family can afford and trust.
               </p>
-              <p className="text-slate-400 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed">
                 The rest, as they say, is history — written by thousands of satisfied customers who kept
                 coming back and spreading the word.
               </p>
@@ -174,7 +173,7 @@ export default function HomePage() {
           <div className="divider max-w-3xl mx-auto mb-16" />
 
           <div className="max-w-4xl mx-auto">
-            <h3 className="font-display font-extrabold text-2xl text-white text-center mb-16 reveal">
+            <h3 className="font-display font-extrabold text-2xl text-gray-900 text-center mb-16 reveal">
               The D-Waash <span className="gradient-text">Journey</span>
             </h3>
             <ol className="relative border-l border-border space-y-12 ml-4" role="list">
@@ -184,8 +183,8 @@ export default function HomePage() {
                   <time className="text-xs font-display font-semibold text-blue-brand uppercase tracking-widest">
                     {item.month && `${item.month} `}{item.year}
                   </time>
-                  <h4 className="font-display font-bold text-white text-lg mt-1 mb-2">{item.title}</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                  <h4 className="font-display font-bold text-gray-900 text-lg mt-1 mb-2">{item.title}</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
                 </li>
               ))}
             </ol>
@@ -197,14 +196,14 @@ export default function HomePage() {
       <section className="section-gradient py-24" aria-labelledby="why-heading">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14 reveal">
-            <h2 id="why-heading" className="font-display font-extrabold text-3xl md:text-4xl text-white mb-4">
+            <h2 id="why-heading" className="font-display font-extrabold text-3xl md:text-4xl text-gray-900 mb-4">
               Why Families Choose D-Waash
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: "✅", title: "Quality You Can Trust", desc: "Every product meets strict quality standards before it reaches your home." },
-              { icon: "🌿", title: "Made in Kerala", desc: "Locally manufactured with care — supporting the community we serve." },
+
               { icon: "💰", title: "Affordable for All", desc: "Premium hygiene shouldn't be a luxury. D-Waash keeps prices accessible." },
               { icon: "🧼", title: "Full Hygiene Range", desc: "From laundry to bathrooms — we cover every corner of your daily hygiene routine." },
               { icon: "💬", title: "Word-of-Mouth Growth", desc: "Built entirely on customer love and positive recommendations — no shortcuts." },
@@ -215,8 +214,8 @@ export default function HomePage() {
                 className={`reveal reveal-delay-${(i % 3) + 1} bg-surface-section border border-border rounded-2xl p-6 hover:border-blue-brand/30 transition-colors duration-300`}
               >
                 <span className="text-3xl mb-4 block" role="img" aria-hidden="true">{item.icon}</span>
-                <h3 className="font-display font-bold text-white text-base mb-2">{item.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="font-display font-bold text-gray-900 text-base mb-2">{item.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -230,10 +229,10 @@ export default function HomePage() {
             <p className="text-blue-brand text-xs font-display font-semibold uppercase tracking-[0.25em] mb-3">
               Get in Touch
             </p>
-            <h2 id="contact-heading" className="font-display font-extrabold text-3xl md:text-4xl text-white mb-4">
+            <h2 id="contact-heading" className="font-display font-extrabold text-3xl md:text-4xl text-gray-900 mb-4">
               Reach Us
             </h2>
-            <p className="text-slate-400 max-w-md mx-auto">
+            <p className="text-gray-500 max-w-md mx-auto">
               For product enquiries, stockist partnerships, or customer support.
             </p>
           </div>
@@ -275,8 +274,8 @@ export default function HomePage() {
                     )}
                   </span>
                   <div>
-                    <p className="text-xs text-slate-500 font-display uppercase tracking-widest mb-1">{item.label}</p>
-                    <p className="text-white font-body text-sm group-hover:text-blue-brand transition-colors">{item.value}</p>
+                    <p className="text-xs text-gray-400 font-display uppercase tracking-widest mb-1">{item.label}</p>
+                    <p className="text-gray-900 font-body text-sm group-hover:text-blue-brand transition-colors">{item.value}</p>
                   </div>
                 </a>
               ))}
@@ -288,15 +287,15 @@ export default function HomePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </span>
-                  <h3 className="font-display font-bold text-white text-sm uppercase tracking-widest">Business Hours</h3>
+                  <h3 className="font-display font-bold text-gray-900 text-sm uppercase tracking-widest">Business Hours</h3>
                 </div>
                 <dl className="space-y-2 text-sm">
                   <div className="flex justify-between py-2 border-b border-border/50">
-                    <dt className="text-slate-500">Monday – Saturday</dt>
-                    <dd className="text-slate-300 font-medium">9:00 AM – 6:00 PM</dd>
+                    <dt className="text-gray-400">Monday – Saturday</dt>
+                    <dd className="text-gray-600 font-medium">9:00 AM – 6:00 PM</dd>
                   </div>
                   <div className="flex justify-between py-2">
-                    <dt className="text-slate-500">Sunday</dt>
+                    <dt className="text-gray-400">Sunday</dt>
                     <dd className="text-red-brand font-medium">Closed</dd>
                   </div>
                 </dl>
@@ -335,11 +334,11 @@ export default function HomePage() {
                   </svg>
                 </span>
 
-                <p className="font-display font-bold text-lg text-white group-hover:text-blue-brand transition-colors text-center">
+                <p className="font-display font-bold text-lg text-gray-900 group-hover:text-blue-brand transition-colors text-center">
                   Find Us on Google Maps
                 </p>
 
-                <span className="text-sm text-slate-400 group-hover:text-slate-300 transition-colors">
+                <span className="text-sm text-gray-500 group-hover:text-gray-600 transition-colors">
                   Open in Maps ↗
                 </span>
               </a>
@@ -369,12 +368,12 @@ export default function HomePage() {
                     />
                   </svg>
 
-                  <p className="text-xs font-display uppercase tracking-widest text-slate-500">
+                  <p className="text-xs font-display uppercase tracking-widest text-gray-400">
                     Address
                   </p>
                 </div>
 
-                <address className="not-italic text-slate-300 text-sm leading-relaxed">
+                <address className="not-italic text-gray-600 text-sm leading-relaxed">
                   {siteConfig.address.street}
                   <br />
                   {siteConfig.address.city}, {siteConfig.address.state} –{" "}

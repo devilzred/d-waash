@@ -126,7 +126,7 @@ export const products: Product[] = [
     description:
       "D-Waash Anti-Ant Powder creates a fast-acting barrier against ants and crawling insects. Long-lasting protection that is easy to apply and safe to use around the home.",
     category: "Home Care",
-    image: "/images/antpowerder.png",
+    image: "/images/antfighter.png",
     imageAlt: "D-Waash anti-ant powder for home insect control",
     features: ["Fast-acting barrier", "Long-lasting protection", "Easy to apply", "Safe around home"],
     schemaName: "D-Waash Anti-Ant Powder",

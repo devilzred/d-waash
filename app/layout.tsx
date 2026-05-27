@@ -124,7 +124,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
       </head>
-      <body className="bg-surface-body text-gray-300 font-body">
+      <body className="bg-surface-body text-gray-700 font-body">
         <Navbar />
         <main>{children}</main>
         <Footer />

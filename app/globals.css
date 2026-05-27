@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surface-body: #121212;
-  --color-surface-section: #1a1a1a;
-  --color-surface-card: #222222;
-  --color-surface-elevated: #2a2a2a;
-  --color-border-DEFAULT: #333333;
-  --color-border-light: #3d3d3d;
+  --color-surface-body: #ffffff;
+  --color-surface-section: #f8f9fa;
+  --color-surface-card: #f0f0f0;
+  --color-surface-elevated: #e8e8e8;
+  --color-border-DEFAULT: #e0e0e0;
+  --color-border-light: #eeeeee;
   --color-red-brand: #e83030;
   --color-red-dim: rgba(232, 48, 48, 0.12);
   --color-blue-brand: #2563eb;
@@ -43,10 +43,10 @@
 }
 
 :root {
-  --surface-body: #121212;
-  --surface-section: #1a1a1a;
-  --surface-card: #222222;
-  --surface-elevated: #2a2a2a;
+  --surface-body: #ffffff;
+  --surface-section: #f8f9fa;
+  --surface-card: #f0f0f0;
+  --surface-elevated: #e8e8e8;
   --red-brand: #e83030;
   --blue-brand: #2563eb;
   --blue-light: #60a5fa;
@@ -58,7 +58,7 @@ html {
 
 body {
   background-color: var(--surface-body);
-  color: #d1d5db;
+  color: #374151;
   font-family: var(--font-inter), sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -93,17 +93,17 @@ body {
 
 .grid-bg {
   background-image:
-    linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37,99,235,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(37,99,235,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,0.06) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 .card-glow {
-  box-shadow: 0 0 0 1px rgba(37,99,235,0.1), 0 4px 32px rgba(0,0,0,0.4);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.08), 0 4px 24px rgba(0,0,0,0.06);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .card-glow:hover {
-  box-shadow: 0 0 0 1px rgba(37,99,235,0.35), 0 8px 48px rgba(37,99,235,0.08);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.25), 0 8px 32px rgba(37,99,235,0.10);
   transform: translateY(-4px);
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .img-placeholder {
-  background: linear-gradient(135deg, #222222 0%, #2a2a2a 100%);
+  background: linear-gradient(135deg, #e0e0e0 0%, #d0d0d0 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,9 +153,9 @@ body {
   position: absolute;
   border-radius: 50%;
   filter: blur(100px);
-  opacity: 0.06;
+  opacity: 0.03;
 }
 
 .section-gradient {
-  background: linear-gradient(180deg, #121212 0%, #1a1a1a 50%, #121212 100%);
+  background: linear-gradient(180deg, #f8f9fa 0%, #f0f0f0 50%, #f8f9fa 100%);
 }

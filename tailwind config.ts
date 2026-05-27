@@ -10,14 +10,14 @@ const config: Config = {
     extend: {
       colors: {
         surface: {
-          body: "#121212",
-          section: "#1a1a1a",
-          card: "#222222",
-          elevated: "#2a2a2a",
+          body: "#ffffff",
+          section: "#f8f9fa",
+          card: "#f0f0f0",
+          elevated: "#e8e8e8",
         },
         border: {
-          DEFAULT: "#333333",
-          light: "#3d3d3d",
+          DEFAULT: "#e0e0e0",
+          light: "#eeeeee",
         },
         red: {
           brand: "#e83030",

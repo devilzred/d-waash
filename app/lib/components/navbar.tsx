@@ -60,7 +60,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm font-body text-gray-400 hover:text-blue-brand transition-colors duration-200 cursor-pointer"
+                className="text-sm font-body text-gray-600 hover:text-blue-brand transition-colors duration-200 cursor-pointer"
               >
                 {link.label}
               </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
         </ul>
 
         <button
-          className="md:hidden text-slate-300 hover:text-white"
+          className="md:hidden text-gray-600 hover:text-gray-900"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
@@ -91,7 +91,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-gray-300 hover:text-blue-brand font-body text-sm transition-colors cursor-pointer"
+              className="text-gray-700 hover:text-blue-brand font-body text-sm transition-colors cursor-pointer"
             >
               {link.label}
             </a>

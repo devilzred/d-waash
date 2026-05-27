@@ -29,7 +29,7 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
         <span className="text-[10px] sm:text-xs font-display font-semibold text-blue-brand uppercase tracking-wider" itemProp="category">
           {product.category}
         </span>
-        <h3 className="font-display font-bold text-[11px] sm:text-sm text-white leading-snug line-clamp-2" itemProp="name">
+        <h3 className="font-display font-bold text-[11px] sm:text-sm text-gray-900 leading-snug line-clamp-2" itemProp="name">
           {product.name}
         </h3>
         <p className="text-[9px] sm:text-[11px] text-blue-brand font-display font-semibold line-clamp-1">
