@@ -131,8 +131,7 @@ export default function HomePage() {
               From One Store to a <span className="gradient-text">Trusted Brand</span>
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-base">
-              D-Waash didn't begin with a big marketing campaign or a factory full of machines.
-              It began with a belief in quality — and customers who agreed.
+              D-Waash began with a belief in quality and customers who agreed.
             </p>
           </div>
 
@@ -141,14 +140,14 @@ export default function HomePage() {
               <p className="text-gray-500 leading-relaxed mb-4">
                 <strong className="text-gray-900">Mr. Thafseel</strong> is a hypermarket owner who also runs
                 several subsidiary businesses across the region. In April 2021, he saw an opportunity to
-                bring quality hygiene products — at fair prices — directly to the community he served.
+                bring quality hygiene products at fair prices directly to the community he served.
               </p>
               <p className="text-gray-500 leading-relaxed mb-4">
                 Starting with his own hypermarket outlets, he launched D-Waash with a simple promise:
                 effective products that every family can afford and trust.
               </p>
               <p className="text-gray-500 leading-relaxed">
-                The rest, as they say, is history — written by thousands of satisfied customers who kept
+                The rest, as they say, is history written by thousands of satisfied customers who kept
                 coming back and spreading the word.
               </p>
             </div>
