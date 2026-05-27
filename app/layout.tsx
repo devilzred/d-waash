@@ -126,7 +126,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-surface-body text-gray-700 font-body">
         <Navbar />
-        <main>{children}</main>
+        <main className="pt-8">{children}</main>
         <Footer />
         <ScrollReveal />
       </body>

@@ -154,15 +154,15 @@ export default function HomePage() {
 
             <div className="reveal reveal-delay-2 relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden card-glow">
-                <div className="img-placeholder relative w-full h-full min-h-[260px] overflow-hidden rounded-xl">
+                <div className="img-placeholder relative w-full h-full min-h-[260px] overflow-hidden rounded-xl bg-white">
                   <img
-                    src="/images/banner.png"
+                    src="/images/bannerimg.png"
                     alt="Mr. Thafseel — Founder, D-Waash"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/15"></div>
+                  <div className="absolute inset-0 bg-black/05"></div>
                 </div>
               </div>
               <div className="absolute -bottom-4 -left-4 w-20 h-20 border-2 border-blue-brand rounded-2xl opacity-20" />

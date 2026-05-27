@@ -38,7 +38,7 @@ export const products: Product[] = [
   {
     id: "comfine-fabric-softener",
     name: "Comfine Fabric Softener",
-    tagline: "Unbelievably soft laundry",
+    tagline: "Ultra Soft",
     description:
       "D-Waash Comfine Fabric Softener leaves clothes irresistibly soft, fresh, and static-free. Makes ironing easier while pampering your fabrics with long-lasting fragrance.",
     category: "Laundry",
@@ -50,7 +50,7 @@ export const products: Product[] = [
   {
     id: "comfine-fabric-softener-premium",
     name: "Comfine Fabric Softener Premium",
-    tagline: "Premium care for your clothes",
+    tagline: "Premium Care",
     description:
       "D-Waash Comfine Fabric Softener Premium is a concentrated formula that delivers deeper conditioning, longer-lasting perfume, and superior wrinkle reduction for everyday luxury.",
     category: "Laundry",
@@ -62,7 +62,7 @@ export const products: Product[] = [
   {
     id: "laundry-liquid",
     name: "Laundry Liquid",
-    tagline: "Liquid power, real clean",
+    tagline: "Liquid Clean",
     description:
       "D-Waash Laundry Liquid cuts through grease and grime with ease. Its concentrated formula works in cold water, pre-treats stains, and leaves clothes smelling beautifully fresh.",
     category: "Laundry",
@@ -86,7 +86,7 @@ export const products: Product[] = [
   {
     id: "hand-wash",
     name: "Hand Wash",
-    tagline: "Soft hands, clean confidence",
+    tagline: "Gentle Clean",
     description:
       "D-Waash Hand Wash gently cleanses while keeping your skin soft and moisturised. Its antibacterial formula gives you confidence with every wash.",
     category: "Personal Care",
@@ -98,7 +98,7 @@ export const products: Product[] = [
   {
     id: "toilet-cleaner",
     name: "Toilet Cleaner",
-    tagline: "Powerful clean, germ-free",
+    tagline: "Germ-Free",
     description:
       "D-Waash Toilet Cleaner fights tough stains, limescale, and germs with its powerful thick-gel formula. Leaves your toilet hygienically clean and fresh-smelling.",
     category: "Home Care",
@@ -110,7 +110,7 @@ export const products: Product[] = [
   {
     id: "bleach-toilet-cleaner",
     name: "Bleach & Toilet Cleaner",
-    tagline: "Bleach power, complete clean",
+    tagline: "Bleach Clean",
     description:
       "D-Waash Bleach & Toilet Cleaner combines the whitening power of bleach with effective toilet cleaning. Removes stubborn stains, disinfects, and leaves surfaces sparkling.",
     category: "Home Care",
@@ -122,7 +122,7 @@ export const products: Product[] = [
   {
     id: "anti-ant-powder",
     name: "Anti-Ant Powder",
-    tagline: "Stop them at the door",
+    tagline: "Ant Barrier",
     description:
       "D-Waash Anti-Ant Powder creates a fast-acting barrier against ants and crawling insects. Long-lasting protection that is easy to apply and safe to use around the home.",
     category: "Home Care",
@@ -146,7 +146,7 @@ export const products: Product[] = [
   {
     id: "floor-cleaner",
     name: "Floor Cleaner",
-    tagline: "Shine from every angle",
+    tagline: "Streak-Free",
     description:
       "D-Waash Floor Cleaner delivers a streak-free shine on tiles, marble, and vinyl. Its dilutable formula cleans deep while leaving a pleasant, fresh fragrance.",
     category: "Home Care",
@@ -158,7 +158,7 @@ export const products: Product[] = [
   {
     id: "floor-cleaner-2in1",
     name: "Floor Cleaner 2-in-1",
-    tagline: "Clean & disinfect in one",
+    tagline: "Clean & Disinfect",
     description:
       "D-Waash Floor Cleaner 2-in-1 combines powerful cleaning with disinfecting action. Kills germs as it cleans, with no rinsing required and a pleasant scent.",
     category: "Home Care",
@@ -170,7 +170,7 @@ export const products: Product[] = [
   {
     id: "floor-cleaner-disinfectant",
     name: "Floor Cleaner Disinfectant",
-    tagline: "Hospital-grade clean at home",
+    tagline: "Hospital Grade",
     description:
       "D-Waash Floor Cleaner Disinfectant delivers hospital-grade cleaning for your floors. Kills 99.9% of bacteria while remaining gentle on floor surfaces.",
     category: "Home Care",

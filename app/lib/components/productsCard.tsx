@@ -13,26 +13,29 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
       itemScope
       itemType="https://schema.org/Product"
     >
-      <div className="relative aspect-[4/5] overflow-hidden bg-[#d3d3d3]">
+      <div className="relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-[#eef2ff] via-[#faf5ff] to-[#fdf2f8]">
         <ProductImage
           src={product.image}
           alt={product.imageAlt}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-          className="object-contain p-2 sm:p-4"
+          className="object-contain p-2 sm:p-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]"
           priority={priority}
           itemProp="image"
         />
       </div>
 
-      <div className="p-2 sm:p-4 flex flex-col gap-0.5 sm:gap-1 flex-1 justify-center">
-        <span className="text-[10px] sm:text-xs font-display font-semibold text-blue-brand uppercase tracking-wider" itemProp="category">
+      <div className="p-2 sm:p-4 flex flex-col gap-1.5 sm:gap-2 flex-1 justify-center min-h-[80px] sm:min-h-[100px]">
+        <span
+          className="inline-flex self-start items-center px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-display font-semibold bg-blue-dim text-blue-brand uppercase tracking-wider"
+          itemProp="category"
+        >
           {product.category}
         </span>
-        <h3 className="font-display font-bold text-[11px] sm:text-sm text-gray-900 leading-snug line-clamp-2" itemProp="name">
+        <h3 className="font-display font-extrabold text-sm sm:text-base text-gray-900 leading-tight line-clamp-2" itemProp="name">
           {product.name}
         </h3>
-        <p className="text-[9px] sm:text-[11px] text-blue-brand font-display font-semibold line-clamp-1">
+        <p className="text-[10px] sm:text-xs font-display text-gray-400 leading-snug">
           {product.tagline}
         </p>
       </div>

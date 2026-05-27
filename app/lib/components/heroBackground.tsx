@@ -16,8 +16,8 @@ type ImageConfig = {
 const IMAGES: ImageConfig[] = [
   {
     src: '/dashborad-images/image1.png',
-    desktop: { top: '8%', left: '74%', w: 145, h: 145 },
-    mobile: { top: '7%', left: '65%', w: 85, h: 85 },
+    desktop: { top: '12%', left: '74%', w: 145, h: 145 },
+    mobile: { top: '10%', left: '65%', w: 85, h: 85 },
     opacity: 0.85,
     rotate: 8,
     animDelay: 0,
@@ -44,7 +44,7 @@ const IMAGES: ImageConfig[] = [
   {
     src: '/dashborad-images/image4.png',
     desktop: { top: '14%', left: '4%', w: 135, h: 135 },
-    mobile: { top: '9%', left: '2%', w: 75, h: 75 },
+    mobile: { top: '14%', left: '3%', w: 75, h: 75 },
     opacity: 0.85,
     rotate: -6,
     animDelay: 1,
