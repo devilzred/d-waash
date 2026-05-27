@@ -11,11 +11,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-12">
 
         <div>
-          {/* <p className="font-display font-extrabold text-2xl mb-3">
+          <p className="font-display font-extrabold text-2xl mb-3">
             <span className="text-red-brand">D-</span>
-            <span className="text-white">Waash</span>
-          </p> */}
-          <div className="relative h-10 w-36">
+            <span className="text-black">Waash</span>
+          </p>
+          {/* <div className="relative h-10 w-36">
     <Image
       src="/logo/dwaash-logo.png"
       alt="D-Waash Logo"
@@ -24,7 +24,7 @@ export default function Footer() {
       priority
       className="object-contain"
     />
-  </div>
+  </div> */}
           <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
             Your Daily Hygiene quality cleaning and hygiene products trusted by
             families across the region since 2021.
