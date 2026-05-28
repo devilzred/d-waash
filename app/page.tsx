@@ -271,7 +271,7 @@ export default function HomePage() {
             <div className="reveal space-y-5">
               {[
                 {
-                  icon: "phone", label: "Customer Care", value: `${siteConfig.phone} / ${siteConfig.phone2}`, href: `tel:${siteConfig.phone}`,
+                  icon: "phone", label: "Customer Care", value: [siteConfig.phone, siteConfig.phone2], href: `tel:${siteConfig.phone}`,
                 },
                 {
                   icon: "phone", label: "Sales & Marketing", value: siteConfig.salesPhone, href: `tel:${siteConfig.salesPhone}`,
@@ -305,7 +305,14 @@ export default function HomePage() {
                   </span>
                   <div>
                     <p className="text-xs text-gray-400 font-display uppercase tracking-widest mb-1">{item.label}</p>
-                    <p className="text-gray-900 font-body text-sm group-hover:text-blue-brand transition-colors">{item.value}</p>
+                    <p className="text-gray-900 font-body text-sm group-hover:text-blue-brand transition-colors">
+                      {Array.isArray(item.value) ? item.value.map((line, i) => (
+                        <span key={i} className={i > 0 ? "block md:inline" : ""}>
+                          {i > 0 && <span className="hidden md:inline"> / </span>}
+                          {line}
+                        </span>
+                      )) : item.value}
+                    </p>
                   </div>
                 </a>
               ))}
