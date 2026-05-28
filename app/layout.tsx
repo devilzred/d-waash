@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     template: "%s | D-Waash – Your Daily Hygiene",
   },
   description: siteConfig.description,
+  alternates: {
+    canonical: siteConfig.url,
+  },
   keywords: [
     "D-Waash",
     "hygiene products Kerala",
@@ -53,10 +56,7 @@ export const metadata: Metadata = {
     images: [
       {
         // ← Place a 1200×630 px image at /public/images/og-default.jpg
-        url: "/images/og-default.jpg",
-        width: 1200,
-        height: 630,
-        alt: "D-Waash – Your Daily Hygiene Products",
+        url: "/images/logo.png",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "D-Waash – Your Daily Hygiene",
     description: siteConfig.description,
-    images: ["/images/og-default.jpg"],
+    images: ["/images/logo.png"],
   },
   robots: {
     index: true,
@@ -75,10 +75,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  verification: {
-    // ← Paste your Search Console verification token here after claiming the site
-    google: "YOUR_GOOGLE_SEARCH_CONSOLE_TOKEN",
   },
 };
 
@@ -109,8 +105,7 @@ const orgJsonLd = {
     addressCountry: siteConfig.address.country,
   },
   sameAs: [
-    siteConfig.social.instagram,
-    siteConfig.social.facebook,
+    `https://wa.me/${siteConfig.social.whatsapp}`,
   ],
 };
 

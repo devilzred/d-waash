@@ -78,7 +78,7 @@ export default function Navbar() {
 
         {/* Center logo */}
         <Link href="/" className="flex items-center justify-center gap-3" aria-label="D-Waash Home">
-          <div className="relative h-16 w-40 pb-1 md:h-22 md:w-60">
+          <div className="relative h-12 w-40 pb-1 md:h-18 md:w-60">
             <Image
               src="/logo/dwaash-logo.png"
               alt="D-Waash Logo"

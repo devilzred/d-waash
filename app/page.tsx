@@ -53,11 +53,15 @@ export default function HomePage() {
 
         <div className="relative z-10 flex flex-col items-center">
           <div className="mb-8 reveal">
-            <div className="mx-auto h-16 flex items-center justify-center">
-              <span className="font-display font-extrabold text-5xl tracking-tight">
-                <span className="text-red-brand">D-</span>
-                <span className="text-gray-900">Waash</span>
-              </span>
+            <div className="relative h-20 w-52 mx-auto">
+              <Image
+                src="/logo/dwaash-logo.png"
+                alt="D-Waash"
+                fill
+                sizes="208px"
+                priority
+                className="object-contain"
+              />
             </div>
           </div>
 
@@ -66,7 +70,7 @@ export default function HomePage() {
           </p>
 
           <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-gray-900 max-w-4xl leading-tight mb-6 reveal reveal-delay-2">
-            Clean Home,{" "}
+            D-Waash – Clean Home,{" "}
             <span className="gradient-text">Happy Family</span>
           </h1>
 
@@ -84,13 +88,32 @@ export default function HomePage() {
 
       {/* ─── STATS ─── */}
       <section className="bg-surface-section border-y border-border py-12" aria-label="Brand highlights">
-        <div className="max-w-4xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
-          {stats.map((s, i) => (
-            <div key={s.label} className={`reveal reveal-delay-${i + 1}`}>
-              <p className="font-display font-extrabold text-3xl gradient-text mb-1">{s.value}</p>
-              <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{s.label}</p>
+        <div className="max-w-4xl mx-auto px-6">
+          {/* Mobile */}
+          <div className="block md:hidden space-y-4">
+            <div className="text-center reveal">
+              <p className="font-display font-extrabold text-3xl gradient-text mb-1">{stats[0].value}</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{stats[0].label}</p>
             </div>
-          ))}
+            <div className="grid grid-cols-2 gap-4 text-center">
+              {stats.slice(1).map((s, i) => (
+                <div key={s.label} className={`reveal reveal-delay-${i + 2}`}>
+                  <p className="font-display font-extrabold text-3xl gradient-text mb-1">{s.value}</p>
+                  <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{s.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Desktop */}
+          <div className="hidden md:grid md:grid-cols-3 gap-8 text-center">
+            {stats.map((s, i) => (
+              <div key={s.label} className={`reveal reveal-delay-${i + 1}`}>
+                <p className="font-display font-extrabold text-4xl gradient-text mb-1">{s.value}</p>
+                <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{s.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -155,10 +178,12 @@ export default function HomePage() {
             <div className="reveal reveal-delay-2 relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden card-glow">
                 <div className="img-placeholder relative w-full h-full min-h-[260px] overflow-hidden rounded-xl bg-white">
-                  <img
+                  <Image
                     src="/images/bannerimg.png"
                     alt="Mr. Thafseel — Founder, D-Waash"
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
                   />
 
                   {/* Overlay */}

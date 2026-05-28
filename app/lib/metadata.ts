@@ -20,10 +20,8 @@ export const siteConfig = {
     country: "IN",
   },
   social: {
-    instagram: "https://instagram.com/dwaash",   // ← tempsite
-    facebook: "https://facebook.com/dwaash",     // ← tempsite
-    whatsapp: "https://wa.me/+918606548393",                   // ← Sales & Marketing WhatsApp
-    contactWhatsapp: "https://wa.me/+919961108415",             // ← Contact WhatsApp
+    whatsapp: "918606548393",
+    contactWhatsapp: "919961108415",
   },
   geo: {
     lat: 11.2807,   // ← Update with exact coordinates
@@ -43,7 +41,7 @@ export function buildMetadata({
   image?: string;
 }): Metadata {
   const url = `${BASE_URL}${path}`;
-  const ogImage = image ?? `${BASE_URL}/images/og-default.jpg`; // ← Place a 1200x630 OG image here
+  const ogImage = image ?? `${BASE_URL}/images/logo.png`;
 
   return {
     title: `${title} | D-Waash – Your Daily Hygiene`,
