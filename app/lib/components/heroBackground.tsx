@@ -15,7 +15,7 @@ type ImageConfig = {
 
 const IMAGES: ImageConfig[] = [
   {
-    src: '/dashborad-images/image1.png',
+    src: '/images/comfine.png',
     desktop: { top: '12%', left: '74%', w: 145, h: 145 },
     mobile: { top: '10%', left: '65%', w: 85, h: 85 },
     opacity: 0.85,
@@ -24,7 +24,7 @@ const IMAGES: ImageConfig[] = [
     animDuration: 18,
   },
   {
-    src: '/dashborad-images/image2.png',
+    src: '/images/comfine2.png',
     desktop: { top: '70%', left: '8%', w: 155, h: 155 },
     mobile: { top: '82%', left: '4%', w: 90, h: 90 },
     opacity: 0.85,
@@ -33,7 +33,7 @@ const IMAGES: ImageConfig[] = [
     animDuration: 22,
   },
   {
-    src: '/dashborad-images/image3.png',
+    src: '/images/floorclean2.png',
     desktop: { top: '74%', left: '82%', w: 140, h: 140 },
     mobile: { top: '78%', left: '80%', w: 80, h: 80 },
     opacity: 0.85,
@@ -42,7 +42,7 @@ const IMAGES: ImageConfig[] = [
     animDuration: 16,
   },
   {
-    src: '/dashborad-images/image4.png',
+    src: '/images/handwashfront.png',
     desktop: { top: '14%', left: '4%', w: 135, h: 135 },
     mobile: { top: '14%', left: '3%', w: 75, h: 75 },
     opacity: 0.85,
@@ -51,7 +51,7 @@ const IMAGES: ImageConfig[] = [
     animDuration: 20,
   },
   {
-    src: '/dashborad-images/image5.png',
+    src: '/images/laudenryliquidfront.png',
     desktop: { top: '42%', left: '70%', w: 130, h: 130 },
     mobile: { top: '47%', left: '80%', w: 75, h: 75 },
     opacity: 0.85,
@@ -60,7 +60,7 @@ const IMAGES: ImageConfig[] = [
     animDuration: 24,
   },
   {
-    src: '/dashborad-images/image6.png',
+    src: '/images/tolietcleanerfront.png',
     desktop: { top: '42%', left: '23%', w: 130, h: 130 },
     mobile: { top: '40%', left: '1%', w: 75, h: 75 },
     opacity: 0.85,
