@@ -70,8 +70,14 @@ export default function HomePage() {
           </p>
 
           <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-gray-900 max-w-4xl leading-tight mb-6 reveal reveal-delay-2">
-            D-Waash – Clean Home,{" "}
-            <span className="gradient-text">Happy Family</span>
+            <span className="block md:hidden">
+              D-Waash – Clean<br />
+              Home,{" "}<span className="gradient-text">Happy<br />Family</span>
+            </span>
+            <span className="hidden md:inline">
+              D-Waash – Clean Home,{" "}
+              <span className="gradient-text">Happy Family</span>
+            </span>
           </h1>
 
           <p className="text-gray-500 text-lg max-w-xl leading-relaxed mb-10 reveal reveal-delay-3">
@@ -265,7 +271,7 @@ export default function HomePage() {
             <div className="reveal space-y-5">
               {[
                 {
-                  icon: "phone", label: "Contact", value: siteConfig.phone, href: `tel:${siteConfig.phone}`,
+                  icon: "phone", label: "Customer Care", value: `${siteConfig.phone} / ${siteConfig.phone2}`, href: `tel:${siteConfig.phone}`,
                 },
                 {
                   icon: "phone", label: "Sales & Marketing", value: siteConfig.salesPhone, href: `tel:${siteConfig.salesPhone}`,

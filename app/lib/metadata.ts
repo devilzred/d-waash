@@ -10,6 +10,7 @@ export const siteConfig = {
   url: BASE_URL,
   logo: `${BASE_URL}/images/logo.png`, // ← Place your logo at /public/images/logo.png
   phone: "+91 9961108415",             // ← Contact number
+  phone2: "+91 7994108415",           // ← Customer Care
   salesPhone: "+91 8606548393",       // ← Sales & Marketing
   email: "dwaashstore@gmail.com",            
   address: {

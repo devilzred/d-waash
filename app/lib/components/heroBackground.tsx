@@ -53,7 +53,7 @@ const IMAGES: ImageConfig[] = [
   {
     src: '/images/dwaash-laundry-liquid.png',
     desktop: { top: '42%', left: '74%', w: 130, h: 130 },
-    mobile: { top: '47%', left: '80%', w: 75, h: 75 },
+    mobile: { top: '50%', left: '82%', w: 75, h: 75 },
     opacity: 0.85,
     rotate: -3,
     animDelay: 3,
@@ -62,7 +62,7 @@ const IMAGES: ImageConfig[] = [
   {
     src: '/images/dwaash-toilet-cleaner.png',
     desktop: { top: '42%', left: '20%', w: 130, h: 130 },
-    mobile: { top: '48%', left: '0%', w: 75, h: 75 },
+    mobile: { top: '51%', left: '-2%', w: 75, h: 75 },
     opacity: 0.85,
     rotate: -3,
     animDelay: 3,

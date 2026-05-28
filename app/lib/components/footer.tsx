@@ -52,13 +52,16 @@ export default function Footer() {
 
         <div>
           <h3 className="font-display font-bold text-gray-900 text-sm uppercase tracking-widest mb-5">
-            Contact
+            Customer Care
           </h3>
           <address className="not-italic space-y-3 text-sm text-gray-500">
             <p>{siteConfig.address.street}</p>
             <p>{siteConfig.address.city}, {siteConfig.address.state}</p>
             <a href={`tel:${siteConfig.phone}`} className="block hover:text-blue-brand transition-colors">
-              {siteConfig.phone} (Contact)
+              {siteConfig.phone} (Customer Support)
+            </a>
+            <a href={`tel:${siteConfig.phone2} `} className="block hover:text-blue-brand transition-colors">
+              {siteConfig.phone2} (Customer Support)
             </a>
             <a href={`tel:${siteConfig.salesPhone}`} className="block hover:text-blue-brand transition-colors">
               {siteConfig.salesPhone} (Sales & Marketing)
