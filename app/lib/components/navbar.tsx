@@ -17,17 +17,24 @@ const rightLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    setHydrated(true);
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 40);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const headerClass = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-    hydrated && scrolled
+    scrolled
       ? "bg-surface-body/90 backdrop-blur-md border-b border-border"
       : "bg-transparent"
   }`;
@@ -80,7 +87,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center justify-center gap-3" aria-label="D-Waash Home">
           <div className="relative h-12 w-40 pb-1 md:h-18 md:w-60">
             <Image
-              src="/logo/dwaash-logo.png"
+              src="/logo/dwaash-logo.webp"
               alt="D-Waash Logo"
               fill
               sizes="240px"

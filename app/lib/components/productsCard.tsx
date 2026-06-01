@@ -1,3 +1,4 @@
+import { memo } from "react";
 import ProductImage from "./productImage";
 import type { Product } from "../products";
 
@@ -6,7 +7,7 @@ interface ProductCardProps {
   priority?: boolean;
 }
 
-export default function ProductCard({ product, priority = false }: ProductCardProps) {
+const ProductCard = memo(function ProductCard({ product, priority = false }: ProductCardProps) {
   return (
     <article
       className="card-glow bg-surface-section rounded-xl sm:rounded-2xl overflow-hidden flex flex-col min-h-[230px] sm:min-h-[300px] m-2"
@@ -45,4 +46,6 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
       </span>
     </article>
   );
-}
+});
+
+export default ProductCard;

@@ -12,9 +12,9 @@ export default function NotFound() {
       <p className="font-display font-extrabold text-8xl gradient-text mb-4">404</p>
       <h1 className="font-display font-bold text-2xl text-gray-900 mb-3">Page Not Found</h1>
       <p className="text-gray-500 mb-8 max-w-sm">
-        Looks like this page doesn't exist. Let's get you back to clean territory.
+        Looks like this page doesn&apos;t exist. Let&apos;s get you back to clean territory.
       </p>
-      <Link href="/" className="btn-primary px-8 py-3 rounded-xl text-sm">
+      <Link href="/" className="bg-blue-brand text-white font-display font-bold px-8 py-3 rounded-xl text-sm hover:bg-blue-light transition-colors">
         Back to Home
       </Link>
     </section>

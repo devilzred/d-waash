@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { siteConfig } from "../metadata";
 import Image from "next/image";
 
@@ -13,7 +12,7 @@ export default function Footer() {
         <div>
           <div className="relative h-14 w-44 mb-3">
             <Image
-              src="/logo/dwaash-logo.png"
+              src="/logo/dwaash-logo.webp"
               alt="D-Waash"
               fill
               sizes="176px"

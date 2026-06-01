@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     images: [
       {
         // ← Place a 1200×630 px image at /public/images/og-default.jpg
-        url: "/images/logo.png",
+        url: "/logo/dwaash-logo.png",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "D-Waash – Your Daily Hygiene",
     description: siteConfig.description,
-    images: ["/images/logo.png"],
+    images: ["/logo/dwaash-logo.png"],
   },
   robots: {
     index: true,
@@ -113,6 +113,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
       <head>
+        <link rel="icon" href="/logo/favicon.png" sizes="32x32" type="image/png" />
+        <link rel="shortcut icon" href="/logo/favicon.png" type="image/png" />
         {/* Organisation structured data */}
         <script
           type="application/ld+json"

@@ -8,7 +8,7 @@ export const siteConfig = {
   description:
     "D-Waash is a Kerala-based hygiene products brand offering bar soap, detergent powder, fabric softener, bathroom cleaner, toilet cleaner and anti-ant powder. Quality you can trust, every day.",
   url: BASE_URL,
-  logo: `${BASE_URL}/images/logo.png`, // ← Place your logo at /public/images/logo.png
+  logo: `${BASE_URL}/logo/dwaash-logo.png`,
   phone: "+91 9961108415",             // ← Contact number
   phone2: "+91 7994108415",           // ← Customer Care
   salesPhone: "+91 8606548393",       // ← Sales & Marketing
@@ -42,7 +42,7 @@ export function buildMetadata({
   image?: string;
 }): Metadata {
   const url = `${BASE_URL}${path}`;
-  const ogImage = image ?? `${BASE_URL}/images/logo.png`;
+  const ogImage = image ?? `${BASE_URL}/logo/dwaash-logo.png`;
 
   return {
     title: `${title} | D-Waash – Your Daily Hygiene`,

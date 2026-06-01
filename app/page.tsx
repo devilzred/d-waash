@@ -1,8 +1,10 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { products } from "./lib/products";
 import { siteConfig } from "./lib/metadata";
 import ProductCard from "./lib/components/productsCard";
-import HeroBackground from "./lib/components/heroBackground";
+
+const HeroBackground = dynamic(() => import("./lib/components/heroBackground"));
 
 const stats = [
   { value: "2021", label: "Founded" },
@@ -55,7 +57,7 @@ export default function HomePage() {
           <div className="mb-8 reveal">
             <div className="relative h-20 w-52 mx-auto">
               <Image
-                src="/logo/dwaash-logo.png"
+                src="/logo/dwaash-logo.webp"
                 alt="D-Waash"
                 fill
                 sizes="208px"
@@ -185,7 +187,7 @@ export default function HomePage() {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden card-glow">
                 <div className="img-placeholder relative w-full h-full min-h-[260px] overflow-hidden rounded-xl bg-white">
                   <Image
-                    src="/images/bannerimg.png"
+                    src="/images/bannerimg.webp"
                     alt="Mr. Thafseel — Founder, D-Waash"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

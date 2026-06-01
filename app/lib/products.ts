@@ -11,18 +11,6 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  // {
-  //   id: "suncare-detergent-powder",
-  //   name: "SunCare Detergent Powder",
-  //   tagline: "Powerful clean, brighter every wash",
-  //   description:
-  //     "D-Waash SunCare Detergent Powder delivers deep-cleaning power that removes tough stains while keeping whites bright and colours vibrant. Perfect for machine and hand wash.",
-  //   category: "Laundry",
-  //   image: "/images/detergent.png",
-  //   imageAlt: "D-Waash SunCare Detergent Powder pack for laundry cleaning",
-  //   features: ["Tough stain removal", "Brightens whites", "Machine & hand wash", "Long-lasting fragrance"],
-  //   schemaName: "D-Waash SunCare Detergent Powder",
-  // },
   {
     id: "suncare-detergent-powder-2in1",
     name: "SunCare Detergent Powder",
@@ -30,7 +18,7 @@ export const products: Product[] = [
     description:
       "D-Waash SunCare Detergent Powder 2-in-1 combines powerful cleaning with built-in fabric softening. One wash delivers clean, soft, and fresh-smelling laundry every time.",
     category: "Laundry",
-    image: "/images/dwaash-suncare-detergent-2in1.png",
+    image: "/images/dwaash-suncare-detergent-2in1.webp",
     imageAlt: "D-Waash SunCare Detergent Powder 2-in-1 with fabric softener",
     features: ["4kg + 2kg free", "Built-in fabric softener", "Anti-static", "Fresh linen scent"],
     schemaName: "D-Waash SunCare Detergent Powder 2-in-1",
@@ -42,7 +30,7 @@ export const products: Product[] = [
     description:
       "D-Waash Comfine Fabric Softener leaves clothes irresistibly soft, fresh, and static-free. Makes ironing easier while pampering your fabrics with long-lasting fragrance.",
     category: "Laundry",
-    image: "/images/dwaash-comfine-fabric-softener.png",
+    image: "/images/dwaash-comfine-fabric-softener.webp",
     imageAlt: "D-Waash Comfine fabric softener bottle for laundry",
     features: ["Ultra-soft finish", "Long-lasting freshness", "Reduces static", "Easy ironing"],
     schemaName: "D-Waash Comfine Fabric Softener",
@@ -54,7 +42,7 @@ export const products: Product[] = [
     description:
       "D-Waash Comfine Fabric Softener Premium is a concentrated formula that delivers deeper conditioning, longer-lasting perfume, and superior wrinkle reduction for everyday luxury.",
     category: "Laundry",
-    image: "/images/dwaash-comfine-fabric-softener-premium.png",
+    image: "/images/dwaash-comfine-fabric-softener-premium.webp",
     imageAlt: "D-Waash Comfine Fabric Softener Premium concentrated formula",
     features: ["Concentrated formula", "Deep-conditioning", "Long-lasting perfume", "Wrinkle reduction"],
     schemaName: "D-Waash Comfine Fabric Softener Premium",
@@ -66,23 +54,11 @@ export const products: Product[] = [
     description:
       "D-Waash Laundry Liquid cuts through grease and grime with ease. Its concentrated formula works in cold water, pre-treats stains, and leaves clothes smelling beautifully fresh.",
     category: "Laundry",
-    image: "/images/dwaash-laundry-liquid.png",
+    image: "/images/dwaash-laundry-liquid.webp",
     imageAlt: "D-Waash laundry liquid detergent bottle",
     features: ["Grease-cutting formula", "Works in cold water", "Pre-treats stains", "Fresh fragrance"],
     schemaName: "D-Waash Laundry Liquid",
   },
-  // {
-  //   id: "bar-soap",
-  //   name: "D-Waash Bar Soap",
-  //   tagline: "Pure clean, daily trust",
-  //   description:
-  //     "D-Waash Bar Soap delivers gentle yet effective cleansing for the whole family. Antibacterial protection and a rich creamy lather make it a trusted choice for everyday hygiene.",
-  //   category: "Personal Care",
-  //   image: "/images/barsoap.png",
-  //   imageAlt: "D-Waash antibacterial bar soap for daily hygiene",
-  //   features: ["Gentle on skin", "Antibacterial", "Rich creamy lather", "Everyday freshness"],
-  //   schemaName: "D-Waash Bar Soap",
-  // },
   {
     id: "hand-wash",
     name: "Hand Wash",
@@ -90,7 +66,7 @@ export const products: Product[] = [
     description:
       "D-Waash Hand Wash gently cleanses while keeping your skin soft and moisturised. Its antibacterial formula gives you confidence with every wash.",
     category: "Personal Care",
-    image: "/images/dwaash-hand-wash.png",
+    image: "/images/dwaash-hand-wash.webp",
     imageAlt: "D-Waash hand wash liquid soap for gentle cleaning",
     features: ["Gentle cleansing", "Antibacterial formula", "Moisturising", "Rinses clean"],
     schemaName: "D-Waash Hand Wash",
@@ -102,7 +78,7 @@ export const products: Product[] = [
     description:
       "D-Waash Toilet Cleaner fights tough stains, limescale, and germs with its powerful thick-gel formula. Leaves your toilet hygienically clean and fresh-smelling.",
     category: "Home Care",
-    image: "/images/dwaash-toilet-cleaner.png",
+    image: "/images/dwaash-toilet-cleaner.webp",
     imageAlt: "D-Waash toilet cleaner for germ-free bathroom hygiene",
     features: ["Kills 99.9% germs", "Limescale removal", "Thick gel formula", "Long-lasting freshness"],
     schemaName: "D-Waash Toilet Cleaner",
@@ -114,7 +90,7 @@ export const products: Product[] = [
     description:
       "D-Waash Bleach & Toilet Cleaner combines the whitening power of bleach with effective toilet cleaning. Removes stubborn stains, disinfects, and leaves surfaces sparkling.",
     category: "Home Care",
-    image: "/images/dwaash-bleach-toilet-cleaner.png",
+    image: "/images/dwaash-bleach-toilet-cleaner.webp",
     imageAlt: "D-Waash bleach and toilet cleaner multi-purpose",
     features: ["Bleach-based formula", "Whitens & disinfects", "Removes tough stains", "Multi-surface"],
     schemaName: "D-Waash Bleach & Toilet Cleaner",
@@ -126,23 +102,11 @@ export const products: Product[] = [
     description:
       "D-Waash Anti-Ant Powder creates a fast-acting barrier against ants and crawling insects. Long-lasting protection that is easy to apply and safe to use around the home.",
     category: "Home Care",
-    image: "/images/dwaash-anti-ant-powder.png",
+    image: "/images/dwaash-anti-ant-powder.webp",
     imageAlt: "D-Waash anti-ant powder for home insect control",
     features: ["Fast-acting barrier", "Long-lasting protection", "Easy to apply", "Safe around home"],
     schemaName: "D-Waash Anti-Ant Powder",
   },
-  // {
-  //   id: "dish-wash-liquid",
-  //   name: "Dish Wash Liquid",
-  //   tagline: "Grease gone in seconds",
-  //   description:
-  //     "D-Waash Dish Wash Liquid cuts through tough grease and baked-on food with ease. Its concentrated formula is gentle on hands while leaving dishes sparkling clean.",
-  //   category: "Home Care",
-  //       image: "/images/dwaash-dish-wash-liquid.png",
-  //   imageAlt: "D-Waash dish wash liquid for grease-free utensils",
-  //   features: ["Cuts tough grease", "Lemon-fresh scent", "Gentle on hands", "Concentrated formula"],
-  //   schemaName: "D-Waash Dish Wash Liquid",
-  // },
   {
     id: "floor-cleaner",
     name: "Floor Cleaner",
@@ -150,7 +114,7 @@ export const products: Product[] = [
     description:
       "D-Waash Floor Cleaner delivers a streak-free shine on tiles, marble, and vinyl. Its dilutable formula cleans deep while leaving a pleasant, fresh fragrance.",
     category: "Home Care",
-    image: "/images/dwaash-floor-cleaner.png",
+    image: "/images/dwaash-floor-cleaner.webp",
     imageAlt: "D-Waash floor cleaner for sparkling floors",
     features: ["Streak-free shine", "Multi-surface safe", "Fresh fragrance", "Dilutable formula"],
     schemaName: "D-Waash Floor Cleaner",
@@ -162,7 +126,7 @@ export const products: Product[] = [
     description:
       "D-Waash Floor Cleaner 2-in-1 combines powerful cleaning with disinfecting action. Kills germs as it cleans, with no rinsing required and a pleasant scent.",
     category: "Home Care",
-    image: "/images/dwaash-floor-cleaner-2in1.png",
+    image: "/images/dwaash-floor-cleaner-2in1.webp",
     imageAlt: "D-Waash floor cleaner 2-in-1 with disinfectant",
     features: ["2-in-1 clean & disinfect", "Kills germs", "No rinse needed", "Pleasant scent"],
     schemaName: "D-Waash Floor Cleaner 2-in-1",
@@ -174,7 +138,7 @@ export const products: Product[] = [
     description:
       "D-Waash Floor Cleaner Disinfectant delivers hospital-grade cleaning for your floors. Kills 99.9% of bacteria while remaining gentle on floor surfaces.",
     category: "Home Care",
-    image: "/images/dwaash-floor-cleaner-disinfectant.png",
+    image: "/images/dwaash-floor-cleaner-disinfectant.webp",
     imageAlt: "D-Waash floor cleaner disinfectant for deep cleaning",
     features: ["Disinfecting formula", "Kills 99.9% bacteria", "Gentle on surfaces", "Fresh after-scent"],
     schemaName: "D-Waash Floor Cleaner Disinfectant",
