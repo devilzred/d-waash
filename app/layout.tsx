@@ -4,7 +4,7 @@ import "./globals.css";
 import { siteConfig } from "./lib/metadata";
 import Navbar from "./lib/components/navbar";
 import Footer from "./lib/components/footer";
-import ScrollReveal from "./lib/components/scroll-reveal";
+
 
 /* ─── Google Fonts via next/font (zero layout shift, self-hosted automatically) ─── */
 const montserrat = Montserrat({
@@ -125,7 +125,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="pt-8">{children}</main>
         <Footer />
-        <ScrollReveal />
       </body>
     </html>
   );

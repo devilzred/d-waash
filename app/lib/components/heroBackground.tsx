@@ -7,6 +7,7 @@ type ImageConfig = {
   src: string;
   desktop: { top: string; left: string; w: number; h: number };
   mobile: { top: string; left: string; w: number; h: number };
+  priority?: boolean;
   opacity: number;
   rotate: number;
   animDelay: number;
@@ -18,6 +19,7 @@ const IMAGES: ImageConfig[] = [
     src: '/images/dwaash-comfine-fabric-softener.webp',
     desktop: { top: '12%', left: '78%', w: 145, h: 145 },
     mobile: { top: '10%', left: '75%', w: 85, h: 85 },
+    priority: true,
     opacity: 0.85,
     rotate: 8,
     animDelay: 0,
@@ -107,6 +109,8 @@ export default function HeroBackground() {
               sizes={`${d.w}px`}
               className="object-contain"
               draggable={false}
+              priority={img.priority}
+              fetchPriority={img.priority ? "high" : undefined}
             />
           </div>
         );

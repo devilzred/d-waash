@@ -5,6 +5,7 @@ import { siteConfig } from "./lib/metadata";
 import ProductCard from "./lib/components/productsCard";
 
 const HeroBackground = dynamic(() => import("./lib/components/heroBackground"));
+const ScrollReveal = dynamic(() => import("./lib/components/scroll-reveal"));
 
 const stats = [
   { value: "2021", label: "Founded" },
@@ -62,6 +63,7 @@ export default function HomePage() {
                 fill
                 sizes="208px"
                 priority
+                fetchPriority="high"
                 className="object-contain"
               />
             </div>
@@ -72,14 +74,8 @@ export default function HomePage() {
           </p>
 
           <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-gray-900 max-w-4xl leading-tight mb-6 reveal reveal-delay-2">
-            <span className="block md:hidden">
-              D-Waash – Clean<br />
-              Home,{" "}<span className="gradient-text">Happy<br />Family</span>
-            </span>
-            <span className="hidden md:inline">
-              D-Waash – Clean Home,{" "}
-              <span className="gradient-text">Happy Family</span>
-            </span>
+            D-Waash – Clean Home,{" "}
+            <span className="gradient-text">Happy Family</span>
           </h1>
 
           <p className="text-gray-500 text-lg max-w-xl leading-relaxed mb-10 reveal reveal-delay-3">
@@ -97,27 +93,10 @@ export default function HomePage() {
       {/* ─── STATS ─── */}
       <section className="bg-surface-section border-y border-border py-12" aria-label="Brand highlights">
         <div className="max-w-4xl mx-auto px-6">
-          {/* Mobile */}
-          <div className="block md:hidden space-y-4">
-            <div className="text-center reveal">
-              <p className="font-display font-extrabold text-3xl gradient-text mb-1">{stats[0].value}</p>
-              <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{stats[0].label}</p>
-            </div>
-            <div className="grid grid-cols-2 gap-4 text-center">
-              {stats.slice(1).map((s, i) => (
-                <div key={s.label} className={`reveal reveal-delay-${i + 2}`}>
-                  <p className="font-display font-extrabold text-3xl gradient-text mb-1">{s.value}</p>
-                  <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{s.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Desktop */}
-          <div className="hidden md:grid md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center">
             {stats.map((s, i) => (
               <div key={s.label} className={`reveal reveal-delay-${i + 1}`}>
-                <p className="font-display font-extrabold text-4xl gradient-text mb-1">{s.value}</p>
+                <p className="font-display font-extrabold text-3xl md:text-4xl gradient-text mb-1">{s.value}</p>
                 <p className="text-xs text-gray-400 uppercase tracking-widest font-display">{s.label}</p>
               </div>
             ))}
@@ -433,6 +412,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <ScrollReveal />
     </>
   );
 }
