@@ -109,8 +109,8 @@ export const products: Product[] = [
   },
   {
     id: "floor-cleaner",
-    name: "Floor Cleaner",
-    tagline: "Streak-Free",
+    name: "Phenyl floor cleaner",
+    tagline: "Streak-Free Combo",
     description:
       "D-Waash Floor Cleaner delivers a streak-free shine on tiles, marble, and vinyl. Its dilutable formula cleans deep while leaving a pleasant, fresh fragrance.",
     category: "Home Care",
@@ -121,10 +121,10 @@ export const products: Product[] = [
   },
   {
     id: "floor-cleaner-2in1",
-    name: "Floor Cleaner 2-in-1",
+    name: "Phenyl floor cleaner",
     tagline: "Clean & Disinfect",
     description:
-      "D-Waash Floor Cleaner 2-in-1 combines powerful cleaning with disinfecting action. Kills germs as it cleans, with no rinsing required and a pleasant scent.",
+      "D-Waash Floor Cleaner combines powerful cleaning with disinfecting action. Kills germs as it cleans, with no rinsing required and a pleasant scent.",
     category: "Home Care",
     image: "/images/dwaash-floor-cleaner-2in1.webp",
     imageAlt: "D-Waash floor cleaner 2-in-1 with disinfectant",
